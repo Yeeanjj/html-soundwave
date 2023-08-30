@@ -35,7 +35,7 @@ var swiper = new Swiper(".event_reser", {
   spaceBetween: 20,
   loop: true,
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   scrollbar: {
