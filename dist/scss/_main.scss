@@ -1,45 +1,88 @@
 //main slide top
-.slide_wrap {
+.slide-intro {
   overflow: hidden;
-  .slide_intro {
+  padding-top: 50px;
+  height: 600px;
+  .main_slide {
+    max-width: 666px;
+    margin: 0 auto;
     position: relative;
-    width: 35%;
-    height: 600px;
-    margin-top: 160px;
-    transform: translateY(-70px);
-    .slide_main {
-      height: 400px;
+    .splide__track {
+      overflow: visible;
+      text-align: center;
+    }
+    .splide__slide {
+      a {
+        display: block;
+        height: 400px;
+      }
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
         border-radius: 15px;
       }
-    }
-    .swiper-pagination-bullet-active {
-      background: #333;
-    }
-    .swiper-slide__txt {
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      z-index: 1;
-      width: 100%;
-      transform: translateX(-50%);
-      padding-top: 30px;
-      strong {
-        color: #222;
-        font-size: 1.375em;
-      }
-      p {
-        display: block;
-        color: #727272;
-        margin-top: 5px;
-        font-weight: 500;
+      .slide__txt {
+        margin-top: 35px;
+        strong {
+          color: #222;
+          font-size: 1.375em;
+        }
+        p {
+          display: block;
+          color: #727272;
+          margin-top: 5px;
+          font-weight: 500;
+        }
       }
     }
   }
+  // .splide__slide img {
+  //   width: 100%;
+  //   height: auto;
+  // }
 }
+// .slide_wrap {
+//   overflow: hidden;
+//   .slide_intro {
+//     position: relative;
+//     width: 35%;
+//     height: 600px;
+//     margin-top: 160px;
+//     transform: translateY(-70px);
+//     .slide_main {
+//       height: 400px;
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         border-radius: 15px;
+//       }
+//     }
+//     .swiper-pagination-bullet-active {
+//       background: #333;
+//     }
+//     .swiper-slide__txt {
+//       position: absolute;
+//       top: 100%;
+//       left: 50%;
+//       z-index: 1;
+//       width: 100%;
+//       transform: translateX(-50%);
+//       padding-top: 30px;
+//       strong {
+//         color: #222;
+//         font-size: 1.375em;
+//       }
+//       p {
+//         display: block;
+//         color: #727272;
+//         margin-top: 5px;
+//         font-weight: 500;
+//       }
+//     }
+//   }
+// }
 .event_reser_slide {
   height: 550px;
   .reser_tit {
@@ -320,12 +363,89 @@
   }
 }
 .sec-artist {
-  height: 850px;
   background: #fafbfc;
-  text-align: center;
-  .artist_tit {
-    display: block;
-    // margin-top: 50px;
-    font-size: 2.5em;
+  height: 850px;
+  margin: 0 auto;
+  .artist_lst {
+    // margin-bottom: 100px;
+    .artist_tit {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 2.5em;
+    }
+    .artist_images {
+      position: relative;
+
+      .artimg_wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 90px;
+        .lst_star {
+          position: relative;
+          margin-bottom: 40px;
+          a {
+            position: relative;
+            display: block;
+            width: 400px;
+            height: 250px;
+            &:hover {
+              // img {
+              //   transform: scale(1.02);
+              // }
+              .artist_name {
+                display: block;
+                position: absolute;
+                bottom: 5px;
+                left: 10px;
+                z-index: 10;
+                color: #fff;
+                font-weight: 600;
+                font-size: 1.125em;
+              }
+              &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                content: "";
+                width: 400px;
+                height: 250px;
+                background: rgba(0, 0, 0, 0.25);
+              }
+            }
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+            .artist_name {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .artist_more {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      font-size: 1.125em;
+      align-items: center;
+      justify-content: center;
+      .more_txt {
+        margin-right: 5px;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+      img {
+        display: block;
+        width: 25px;
+        height: 8.25px;
+      }
+    }
   }
 }
