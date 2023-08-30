@@ -4,12 +4,12 @@ var splide = new Splide(".main_slide", {
   // arrows: false,
   gap: "40px",
   start: 0,
-  autoplay: {
-    interval: 300,
-    pauseOnHover: {
-      resetProgress: true,
-    },
-  },
+  // autoplay: {
+  //   interval: 300,
+  //   pauseOnHover: {
+  //     resetProgress: true,
+  //   },
+  // },
 });
 
 splide.mount();
@@ -34,10 +34,10 @@ var swiper = new Swiper(".event_reser", {
   slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
