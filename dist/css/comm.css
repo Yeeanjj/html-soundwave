@@ -332,6 +332,13 @@ legend {
   margin-top: 5px;
   font-weight: 500;
 }
+.slide-intro .main_slide .splide__pagination {
+  counter-reset: pagination-num;
+}
+.slide-intro .main_slide .splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter(pagination-num);
+}
 
 .event_reser_slide {
   height: 550px;
@@ -445,15 +452,24 @@ legend {
   font-size: 1.125em;
 }
 .sec-feed .feed_lst .feed_cont_chart .chrat_more .more_txt {
+  position: relative;
   margin-right: 5px;
+}
+.sec-feed .feed_lst .feed_cont_chart .chrat_more .more_txt::after {
+  position: absolute;
+  top: 1px;
+  right: -20px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../../images/main/chart_plus.png) no-repeat 0 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 0;
+     object-position: 0;
 }
 .sec-feed .feed_lst .feed_cont_chart .chrat_more .more_txt:hover {
   font-weight: bold;
-}
-.sec-feed .feed_lst .feed_cont_chart .chrat_more img {
-  display: block;
-  width: 18px;
-  height: 18px;
 }
 .sec-feed .feed_lst .feed_cont_video {
   position: relative;
@@ -490,19 +506,23 @@ legend {
 }
 .sec-mainitem .mainitem_lst .mainitem_tit_mini .mini_txt {
   display: block;
-  margin-right: 35px;
+  padding-left: 15px;
+}
+.sec-mainitem .mainitem_lst .mainitem_tit_mini .mini_txt:first-child {
+  padding: 0;
 }
 .sec-mainitem .mainitem_lst .mainitem_tit_mini a {
   position: relative;
+  display: block;
+  width: 80px;
 }
 .sec-mainitem .mainitem_lst .mainitem_tit_mini a:hover {
   font-weight: bold;
 }
 .sec-mainitem .mainitem_lst .mainitem_tit_mini a:hover::after {
   position: absolute;
-  top: -5px;
-  right: -20px;
-  display: block;
+  top: -1px;
+  right: 5px;
   content: "";
   background: #212649;
   opacity: 20%;
@@ -519,17 +539,59 @@ legend {
 .sec-mainitem .mainitem_lst .mainitem_images .item_images {
   display: block;
 }
-.sec-mainitem .mainitem_lst .mainitem_images .item_images a {
+.sec-mainitem .mainitem_lst .mainitem_images .item_images .itemtogo {
+  position: relative;
   display: block;
   width: 220px;
   height: 220px;
 }
-.sec-mainitem .mainitem_lst .mainitem_images .item_images a img {
+.sec-mainitem .mainitem_lst .mainitem_images .item_images .itemtogo img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox {
+  width: 220px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox .item_oderbox_txt {
+  padding: 0 5px;
+  font-size: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 500;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox .item_oderbox_txt .item_oderbox_tit {
+  display: block;
+  font-size: 0.875em;
+  font-weight: 300;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox .item_oderbox_pay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox .item_oderbox_pay .itemlst {
+  display: block;
+  padding-right: 5px;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox .item_oderbox_pay .itemlst .itempay {
+  display: block;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox .item_oderbox_pay .itemlst .item_pay_sale {
+  font-weight: 500;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox .item_oderbox_pay .itemlst .item_pay_original {
+  font-weight: 300;
+  font-size: 0.875em;
+}
+.sec-mainitem .mainitem_lst .mainitem_images .item_oderbox .item_oderbox_pay .itemlst .item_sale {
+  font-weight: 500;
+  color: red;
 }
 .sec-mainitem .mainitem_more {
   position: absolute;
