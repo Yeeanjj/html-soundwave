@@ -14,22 +14,6 @@ var splide = new Splide(".main_slide", {
 
 splide.mount();
 
-// var swiper = new Swiper(".slide_intro", {
-//   spaceBetween: 40,
-//   centeredSlides: true,
-//   slidesPerView: 1,
-//   loop: true,
-//   loopAdditionalSlides: 1,
-//   autoplay: {
-//     delay: 3500,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     dynamicBullets: true,
-//   },
-// });
-
 var swiper = new Swiper(".event_reser", {
   slidesPerView: 5,
   spaceBetween: 20,
@@ -41,5 +25,44 @@ var swiper = new Swiper(".event_reser", {
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
+  },
+});
+
+$(function () {
+  $(".mainitem_txt .minitxt_a").on("click", function () {
+    if ($(this).parent().hasClass("active")) {
+      $(this).parent().removeClass("active");
+    } else {
+      $(".mainitem_tit_mini > li").removeClass("active");
+      $(this).parent().addClass("active");
+    }
+  });
+
+  // show content
+  $(".mainitem_tit_mini li:first-child").addClass("active");
+  $(".mainitem_cont").hide();
+  $("#tab1").show();
+
+  // click function
+  $(".mainitem_tit_mini li").click(function () {
+    $(".mainitem_tit_mini li").removeClass("active");
+    $(this).addClass("active");
+    $(".mainitem_cont").hide();
+
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    return false;
+  });
+});
+
+var swiper = new Swiper(".artist_images", {
+  intialSlide: 0,
+  slidesPerView: 3,
+  spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });

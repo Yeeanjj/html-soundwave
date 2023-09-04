@@ -36,57 +36,8 @@
         }
       }
     }
-    .splide__pagination {
-      counter-reset: pagination-num;
-    }
-
-    .splide__pagination__page:before {
-      counter-increment: pagination-num;
-      content: counter(pagination-num);
-    }
   }
 }
-// .slide_wrap {
-//   overflow: hidden;
-//   .slide_intro {
-//     position: relative;
-//     width: 35%;
-//     height: 600px;
-//     margin-top: 160px;
-//     transform: translateY(-70px);
-//     .slide_main {
-//       height: 400px;
-//       img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         border-radius: 15px;
-//       }
-//     }
-//     .swiper-pagination-bullet-active {
-//       background: #333;
-//     }
-//     .swiper-slide__txt {
-//       position: absolute;
-//       top: 100%;
-//       left: 50%;
-//       z-index: 1;
-//       width: 100%;
-//       transform: translateX(-50%);
-//       padding-top: 30px;
-//       strong {
-//         color: #222;
-//         font-size: 1.375em;
-//       }
-//       p {
-//         display: block;
-//         color: #727272;
-//         margin-top: 5px;
-//         font-weight: 500;
-//       }
-//     }
-//   }
-// }
 .event_reser_slide {
   height: 550px;
   .reser_tit {
@@ -184,9 +135,6 @@
             }
             img {
               display: none;
-              // position: absolute;
-              // top: -50%;
-              // left: 0;
               width: 60px;
               height: 60px;
             }
@@ -238,145 +186,171 @@
 }
 .sec-mainitem {
   height: 700px;
-  .mainitem_lst {
-    position: relative;
-    margin-top: 100px;
-    .mainitem_tit {
-      margin-top: 50px;
-      font-size: 2.5em;
-      text-align: center;
-    }
-    .mainitem_tit_mini {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      text-align: center;
-      font-size: 1.375em;
-      .mini_txt {
-        display: block;
-        padding-left: 15px;
-        &:first-child {
-          padding: 0;
-        }
+}
+.mainitem_lst {
+  position: relative;
+  margin-top: 100px;
+  .mainitem_tit {
+    margin-top: 50px;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .mainitem_tit_mini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.375em;
+    .mini_txt {
+      position: relative;
+      display: block;
+      padding-left: 15px;
+      &:first-child {
+        padding: 0;
       }
-      a {
-        position: relative;
-        display: block;
-        width: 80px;
-        &:hover {
-          font-weight: bold;
-          &::after {
-            position: absolute;
-            top: -1px;
-            right: 5px;
-            content: "";
-            background: #212649;
-            opacity: 20%;
-            width: 35px;
-            height: 35px;
-            border-radius: 100px;
-          }
+      &.active {
+        font-weight: bold;
+        &::after {
+          position: absolute;
+          top: -1px;
+          right: 5px;
+          content: "";
+          background: #212649;
+          opacity: 20%;
+          width: 35px;
+          height: 35px;
+          border-radius: 100px;
         }
       }
     }
-    .mainitem_images {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 80px;
-      .item_images {
-        display: block;
-        .itemtogo {
-          position: relative;
-          display: block;
-          width: 220px;
-          height: 220px;
-          // &:hover {
-          //   &::after {
-          //     position: absolute;
-          //     top: 0;
-          //     left: 0;
-          //     right: 0;
-          //     bottom: 0;
-          //     content: "";
-          //     width: 220px;
-          //     height: 220px;
-          //     background: rgba(0, 0, 0, 0.5);
-          //   }
-          // }
-          img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-      }
-      .item_oderbox {
-        width: 220px;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        .item_oderbox_txt {
-          padding: 0 5px;
-          font-size: 1em;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          font-weight: 500;
-          .item_oderbox_tit {
-            display: block;
-            font-size: 0.875em;
-            font-weight: 300;
-          }
-        }
-        .item_oderbox_pay {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          .itemlst {
-            display: block;
-            padding-right: 5px;
-            .itempay {
-              display: block;
-            }
-            .item_pay_sale {
-              font-weight: 500;
-            }
-            .item_pay_original {
-              font-weight: 300;
-              font-size: 0.875em;
-            }
-            .item_sale {
-              font-weight: 500;
-              color: red;
-            }
-          }
-        }
-      }
+    a {
+      display: block;
+      width: 80px;
     }
   }
-  .mainitem_more {
-    position: absolute;
-    bottom: -40px;
-    right: 0;
+
+  .mainitem_images {
     display: flex;
-    font-size: 1.125em;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    .more_txt {
-      margin-right: 5px;
-      &:hover {
-        font-weight: bold;
+    margin-top: 80px;
+    overflow: hidden;
+    .item_images {
+      display: block;
+      .itemtogo {
+        position: relative;
+        display: block;
+        width: 220px;
+        height: 220px;
+        &:hover {
+          .item_oderbox {
+            top: 0;
+            transition: top 0.5s;
+          }
+        }
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
-    img {
+    .item_oderbox {
+      position: absolute;
+      top: 220px;
+      left: 0;
+      width: 220px;
+      height: 220px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 50px 15px;
+    }
+    .item_oderbox_tit {
       display: block;
-      width: 25px;
-      height: 8.25px;
+      font-size: 0.875em;
+      font-weight: 300;
+    }
+    .item_txt {
+      display: block;
+      font-size: 1em;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+    .item_oderbox_pay {
+      display: flex;
+      align-items: center;
+      // justify-content: space-between;
+      .itemlst {
+        display: block;
+        .itempay {
+          display: block;
+          width: 65px;
+          padding-right: 5px;
+          text-align: center;
+        }
+        .item_pay_sale {
+          font-size: 0.875em;
+          font-weight: 500;
+        }
+        .item_pay_original {
+          font-weight: 300;
+          font-size: 0.875em;
+          text-decoration: line-through;
+        }
+        .item_sale {
+          width: 26px;
+          font-weight: 500;
+          color: red;
+        }
+        .item_cart {
+          width: 24px;
+          &::before {
+            content: "\f1cc";
+            font-family: "Material Symbols Outlined";
+            font-size: 24px;
+          }
+        }
+      }
     }
   }
 }
+.mainitem_more {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  display: flex;
+  font-size: 1.125em;
+  align-items: center;
+  justify-content: center;
+  .more_txt {
+    position: relative;
+    display: flex;
+    margin-right: 22px;
+    &::after {
+      position: absolute;
+      top: -3px;
+      right: -24px;
+      display: block;
+      content: "\e941";
+      font-size: 22px;
+      font-family: "Material Symbols Outlined";
+    }
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  img {
+    display: block;
+    width: 25px;
+    height: 8.25px;
+  }
+}
+
 .main_mid_banner {
   a {
     display: block;
@@ -412,6 +386,7 @@
           width: 265px;
           height: 280px;
           &:hover {
+            overflow: hidden;
             img {
               transform: scale(1.02);
               box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5) inset;
@@ -433,7 +408,17 @@
       align-items: center;
       justify-content: center;
       .more_txt {
-        margin-right: 5px;
+        position: relative;
+        margin-right: 22px;
+        &::after {
+          position: absolute;
+          top: -3px;
+          right: -24px;
+          display: block;
+          content: "\e941";
+          font-size: 22px;
+          font-family: "Material Symbols Outlined";
+        }
         &:hover {
           font-weight: bold;
         }
@@ -448,88 +433,133 @@
 }
 .sec-artist {
   background: #fafbfc;
+  overflow: hidden;
   height: 850px;
-  margin: 0 auto;
-  .artist_lst {
-    // margin-bottom: 100px;
-    .artist_tit {
-      text-align: center;
-      margin-top: 50px;
+  .artist_tit {
+    text-align: center;
+    padding-top: 50px;
+    h2 {
       font-size: 2.5em;
     }
-    .artist_images {
-      position: relative;
-
-      .artimg_wrap {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 90px;
-        .lst_star {
-          position: relative;
-          margin-bottom: 40px;
-          a {
-            position: relative;
+  }
+  .artist_images {
+    margin-top: 90px;
+    overflow: visible;
+    background: lightgoldenrodyellow;
+    .artimg_wrap {
+      .lst_star {
+        a {
+          display: block;
+          width: 390px;
+          height: 550px;
+          img {
             display: block;
-            width: 400px;
-            height: 250px;
-            &:hover {
-              // img {
-              //   transform: scale(1.02);
-              // }
-              .artist_name {
-                display: block;
-                position: absolute;
-                bottom: 5px;
-                left: 10px;
-                z-index: 10;
-                color: #fff;
-                font-weight: 600;
-                font-size: 1.125em;
-              }
-              &::after {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                content: "";
-                width: 400px;
-                height: 250px;
-                background: rgba(0, 0, 0, 0.25);
-              }
-            }
-            img {
-              display: block;
-              width: 100%;
-              height: 100%;
-            }
-            .artist_name {
-              display: none;
-            }
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
       }
     }
-    .artist_more {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      display: flex;
-      font-size: 1.125em;
-      align-items: center;
-      justify-content: center;
-      .more_txt {
-        margin-right: 5px;
-        &:hover {
-          font-weight: bold;
-        }
-      }
-      img {
-        display: block;
-        width: 25px;
-        height: 8.25px;
-      }
-    }
+  }
+  // .artist_lst {
+  //   .artist_images {
+  //     position: relative;
+
+  //     .artimg_wrap {
+  //       display: flex;
+  //       justify-content: space-between;
+  //       flex-wrap: wrap;
+  //       margin-top: 90px;
+  //       .lst_star {
+  //         position: relative;
+  //         margin-bottom: 40px;
+  //         a {
+  //           position: relative;
+  //           display: block;
+  //           width: 400px;
+  //           height: 250px;
+  //           &:hover {
+  //             .artist_name {
+  //               display: block;
+  //               position: absolute;
+  //               bottom: 5px;
+  //               left: 10px;
+  //               z-index: 10;
+  //               color: #fff;
+  //               font-weight: 600;
+  //               font-size: 1.125em;
+  //             }
+  //             &::after {
+  //               position: absolute;
+  //               top: 0;
+  //               left: 0;
+  //               right: 0;
+  //               bottom: 0;
+  //               content: "";
+  //               width: 400px;
+  //               height: 250px;
+  //               background: rgba(0, 0, 0, 0.25);
+  //             }
+  //           }
+  //           img {
+  //             display: block;
+  //             width: 100%;
+  //             height: 100%;
+  //           }
+  //           .artist_name {
+  //             display: none;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  //   .artist_more {
+  //     position: absolute;
+  //     bottom: 0;
+  //     right: 0;
+  //     display: flex;
+  //     font-size: 1.125em;
+  //     align-items: center;
+  //     justify-content: center;
+  //     .more_txt {
+  //       position: relative;
+  //       margin-right: 22px;
+  //       &::after {
+  //         position: absolute;
+  //         top: -3px;
+  //         right: -24px;
+  //         display: block;
+  //         content: "\e941";
+  //         font-size: 22px;
+  //         font-family: "Material Symbols Outlined";
+  //       }
+  //       &:hover {
+  //         font-weight: bold;
+  //       }
+  //     }
+  //     img {
+  //       display: block;
+  //       width: 25px;
+  //       height: 8.25px;
+  //     }
+  //   }
+  // }
+}
+.btn-g {
+}
+.btn_top {
+  &::after {
+    display: block;
+    content: "\f1e0";
+    font-size: 1.875rem;
+    font-family: "Material Symbols Outlined";
+    font-weight: 300;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: rgba(51, 51, 51, 0.7);
+    border-radius: 100px;
   }
 }
