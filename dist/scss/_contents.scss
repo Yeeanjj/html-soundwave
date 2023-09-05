@@ -1,3 +1,28 @@
-.contents {
-  height: 300px;
+// itemlst
+.itemlst_menu {
+  height: 200px;
+  background: #fafbfc;
+  width: 100%;
+  .itemlst_menutit_txt {
+    margin: 60px;
+    display: flex;
+    align-items: flex-end;
+    .menu_tit {
+      font-size: 2.8125rem;
+      margin-right: 27px;
+    }
+    .menumini_tit {
+      display: block;
+      font-size: 1.875rem;
+      font-weight: 600;
+      color: #555555;
+    }
+  }
+  .menu_titlst {
+    display: flex;
+    .titlst {
+      display: block;
+      margin-right: 44px;
+    }
+  }
 }

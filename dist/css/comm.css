@@ -974,6 +974,30 @@ legend {
   transition: 0.5s;
 }
 
-.contents {
-  height: 300px;
+.itemlst_menu {
+  height: 200px;
+  background: #fafbfc;
+  width: 100%;
+}
+.itemlst_menu .itemlst_menutit_txt {
+  margin: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+.itemlst_menu .itemlst_menutit_txt .menu_tit {
+  font-size: 2.8125rem;
+  margin-right: 27px;
+}
+.itemlst_menu .itemlst_menutit_txt .menumini_tit {
+  display: block;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #555555;
+}
+.itemlst_menu .menu_titlst {
+  display: flex;
+}
+.itemlst_menu .menu_titlst .titlst {
+  display: block;
+  margin-right: 44px;
 }/*# sourceMappingURL=comm.css.map */
