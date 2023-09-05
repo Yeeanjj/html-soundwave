@@ -54,15 +54,3 @@ $(function () {
     return false;
   });
 });
-
-var swiper = new Swiper(".artist_images", {
-  intialSlide: 1,
-  slidesPerView: 3,
-  spaceBetween: 20,
-  // centeredSlides: true,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
