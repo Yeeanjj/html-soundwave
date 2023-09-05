@@ -852,46 +852,126 @@ legend {
 
 .sec-artist {
   background: #fafbfc;
-  overflow: hidden;
   height: 850px;
 }
-.sec-artist .artist_tit {
+.sec-artist .artist_lst .artist_tit {
   text-align: center;
   padding-top: 50px;
-}
-.sec-artist .artist_tit h2 {
   font-size: 2.5em;
 }
-.sec-artist .artist_images {
+.sec-artist .artist_lst .artist_images {
+  position: relative;
+}
+.sec-artist .artist_lst .artist_images .artimg_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 90px;
-  overflow: visible;
-  background: lightgoldenrodyellow;
 }
-.sec-artist .artist_images .artimg_wrap .lst_star a {
+.sec-artist .artist_lst .artist_images .artimg_wrap .lst_star {
+  position: relative;
+  margin-bottom: 40px;
+}
+.sec-artist .artist_lst .artist_images .artimg_wrap .lst_star a {
+  position: relative;
   display: block;
-  width: 390px;
-  height: 550px;
+  width: 400px;
+  height: 250px;
 }
-.sec-artist .artist_images .artimg_wrap .lst_star a img {
+.sec-artist .artist_lst .artist_images .artimg_wrap .lst_star a:hover .artist_name {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  z-index: 10;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.125em;
+}
+.sec-artist .artist_lst .artist_images .artimg_wrap .lst_star a:hover::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 400px;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.sec-artist .artist_lst .artist_images .artimg_wrap .lst_star a img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.sec-artist .artist_lst .artist_images .artimg_wrap .lst_star a .artist_name {
+  display: none;
+}
+.sec-artist .artist_lst .artist_more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  font-size: 1.125em;
+  align-items: center;
+  justify-content: center;
+}
+.sec-artist .artist_lst .artist_more .more_txt {
+  position: relative;
+  margin-right: 22px;
+}
+.sec-artist .artist_lst .artist_more .more_txt::after {
+  position: absolute;
+  top: -3px;
+  right: -24px;
+  display: block;
+  content: "\e941";
+  font-size: 22px;
+  font-family: "Material Symbols Outlined";
+}
+.sec-artist .artist_lst .artist_more .more_txt:hover {
+  font-weight: bold;
+}
+.sec-artist .artist_lst .artist_more img {
+  display: block;
+  width: 25px;
+  height: 8.25px;
 }
 
 .btn_top::after {
   display: block;
   content: "\f1e0";
-  font-size: 1.875rem;
+  font-size: 25px;
   font-family: "Material Symbols Outlined";
-  font-weight: 300;
   width: 40px;
   height: 40px;
   line-height: 40px;
-  color: #fff;
-  background: rgba(51, 51, 51, 0.7);
+  border: 1px solid #444;
   border-radius: 100px;
+}
+.btn_top:hover {
+  color: #fff;
+  background: #444;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
+.btn_bottom::after {
+  display: block;
+  content: "\f1e3";
+  font-size: 25px;
+  font-family: "Material Symbols Outlined";
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #444;
+  border-radius: 100px;
+}
+.btn_bottom:hover {
+  color: #fff;
+  background: #444;
+  border-radius: 100px;
+  transition: 0.5s;
 }
 
 .contents {
