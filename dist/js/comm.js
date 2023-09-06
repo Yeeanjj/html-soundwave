@@ -5,7 +5,7 @@ var splide = new Splide(".main_slide", {
   gap: "40px",
   start: 0,
   autoplay: {
-    interval: 300,
+    interval: 250,
     pauseOnHover: {
       resetProgress: true,
     },
@@ -18,10 +18,10 @@ var swiper = new Swiper(".event_reser", {
   slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,

@@ -154,14 +154,11 @@
           margin-right: 5px;
           &::after {
             position: absolute;
-            top: 1px;
+            top: -2px;
             right: -20px;
-            content: "";
-            width: 20px;
-            height: 20px;
-            background: url(../../images/main/chart_plus.png) no-repeat 0 0;
-            object-fit: contain;
-            object-position: 0;
+            content: "\e145";
+            font-family: "Material Symbols Outlined";
+            font-size: 1.25rem;
           }
           &:hover {
             font-weight: bold;
