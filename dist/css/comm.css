@@ -700,13 +700,13 @@ legend {
 .mainitem_lst .mainitem_images .item_oderbox_pay {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .mainitem_lst .mainitem_images .item_oderbox_pay .itemlst {
   display: block;
 }
 .mainitem_lst .mainitem_images .item_oderbox_pay .itemlst .itempay {
   display: block;
-  width: 65px;
   padding-right: 5px;
   text-align: center;
 }

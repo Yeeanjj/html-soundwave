@@ -281,12 +281,12 @@
     .item_oderbox_pay {
       display: flex;
       align-items: center;
-      // justify-content: space-between;
+      justify-content: space-between;
       .itemlst {
         display: block;
         .itempay {
           display: block;
-          width: 65px;
+          // width: 65px;
           padding-right: 5px;
           text-align: center;
         }
