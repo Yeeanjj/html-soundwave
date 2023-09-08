@@ -191,6 +191,23 @@
           </div>
         </div>
       </div>
+      <script>
+        var splide = new Splide(".main_slide", {
+          type: "loop",
+          // perPage: 1,
+          // arrows: false,
+          gap: "40px",
+          start: 0,
+          autoplay: {
+            interval: 250,
+            pauseOnHover: {
+              resetProgress: true,
+            },
+          },
+        });
+
+        splide.mount();
+      </script>
       <main id="main">
         <section class="inner sec-event">
           <div class="event_reser_slide">
