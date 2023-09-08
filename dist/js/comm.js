@@ -18,10 +18,10 @@ var swiper = new Swiper(".event_reser", {
   slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
@@ -29,15 +29,6 @@ var swiper = new Swiper(".event_reser", {
 });
 
 $(function () {
-  // $(".mainitem_txt .minitxt_a").on("click", function () {
-  //   if ($(this).parent().hasClass("active")) {
-  //     $(this).parent().removeClass("active");
-  //   } else {
-  //     $(".mainitem_tit_mini > li").removeClass("active");
-  //     $(this).parent().addClass("active");
-  //   }
-  // });
-
   // show content
   $(".mainitem_tit_mini li:first-child").addClass("active");
   $(".mainitem_cont").hide();
