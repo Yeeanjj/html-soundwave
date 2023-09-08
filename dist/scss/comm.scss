@@ -208,8 +208,44 @@
       width: 40px;
       height: 40px;
     }
+    .btn_top {
+      &::after {
+        display: block;
+        content: "\f1e0";
+        font-size: 25px;
+        font-family: "Material Symbols Outlined";
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #333;
+        border-radius: 100px;
+      }
+      &:hover {
+        color: #fff;
+        background: #333;
+        border-radius: 100px;
+        transition: 0.5s;
+      }
+    }
     .btn_bottom {
       margin-top: 10px;
+      &::after {
+        display: block;
+        content: "\f1e3";
+        font-size: 25px;
+        font-family: "Material Symbols Outlined";
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #333;
+        border-radius: 100px;
+      }
+      &:hover {
+        color: #fff;
+        background: #333;
+        border-radius: 100px;
+        transition: 0.5s;
+      }
     }
   }
 }

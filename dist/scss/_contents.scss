@@ -1,32 +1,52 @@
 // itemlst
-
-.itemlst_menu {
-  width: 100%;
-  height: 200px;
+.ltemlst_menutab {
   background: #fafbfc;
-  .itemlst_menutit_txt {
-    margin: 60px 0 15px;
-    display: flex;
-    align-items: flex-end;
-    .menu_tit {
-      font-size: 2.8125rem;
-      margin-right: 27px;
+  .itemlst_menu {
+    width: 100%;
+    height: 200px;
+    .itemlst_menutit_txt {
+      margin: 60px 0 15px;
+      display: flex;
+      align-items: flex-end;
+      .menu_tit {
+        font-size: 2.8125rem;
+        margin-right: 27px;
+      }
+      .menumini_tit {
+        display: block;
+        font-size: 1.875rem;
+        font-weight: 600;
+        color: #555555;
+      }
     }
-    .menumini_tit {
-      display: block;
-      font-size: 1.875rem;
-      font-weight: 600;
-      color: #555555;
-    }
-  }
-  .menu_titlst {
-    display: flex;
-    .titlst {
-      font-size: 1.375rem;
-      font-weight: 500;
-      display: block;
-      color: #555555;
-      margin-right: 44px;
+    .menu_titlst {
+      display: flex;
+      width: 100%;
+      .titlst {
+        position: relative;
+        font-size: 1.375rem;
+        font-weight: 500;
+        margin-right: 44px;
+        a {
+          color: #555555;
+          display: block;
+        }
+        &.on {
+          color: #222;
+          font-weight: bold;
+          &::after {
+            position: absolute;
+            top: -1px;
+            right: -10px;
+            content: "";
+            background: #212649;
+            opacity: 20%;
+            width: 35px;
+            height: 35px;
+            border-radius: 100px;
+          }
+        }
+      }
     }
   }
 }
@@ -35,23 +55,29 @@
 }
 .infolst {
   display: flex;
-  align-items: cener;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   .infolst_item {
     display: block;
     margin-bottom: 70px;
+    &:nth-child(n + 13) {
+      margin-bottom: 0;
+    }
     a {
       display: block;
       width: 285px;
       height: 450px;
       img {
+        display: block;
         width: 285px;
         height: 300px;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
     .ltemlst_infobox {
+      position: relative;
       width: 275px;
       height: 141px;
       margin: 10px 5px 0;
@@ -67,6 +93,10 @@
         }
       }
       .infobox_pay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -94,7 +124,68 @@
       }
     }
   }
-  img {
+}
+.itemlst_number {
+  margin: 100px auto 135px;
+  position: relative;
+}
+.numberlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .numberlist_pagenate {
     display: block;
+    width: 30px;
+    margin-right: 25px;
+    text-align: center;
+    &.active {
+      // border: 1px solid #222;
+      a {
+        color: #222;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    a {
+      display: block;
+      width: 30px;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #888;
+    }
+  }
+}
+.pagenate_emog {
+  position: absolute;
+  top: 4px;
+  left: 60%;
+  transform: translateX(-30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  a {
+    display: block;
+    width: 30px;
+  }
+  .pagenate_next {
+    margin-right: 5px;
+    .nextpage {
+      &::before {
+        content: "\e5e1";
+        font-size: 1rem;
+        font-family: "Material Symbols Outlined";
+      }
+    }
+  }
+  .lastpage {
+    &::after {
+      content: "\ea50";
+      font-size: 1.25rem;
+      font-family: "Material Symbols Outlined";
+    }
   }
 }

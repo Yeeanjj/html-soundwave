@@ -1,18 +1,18 @@
-var splide = new Splide(".main_slide", {
-  type: "loop",
-  // perPage: 1,
-  // arrows: false,
-  gap: "40px",
-  start: 0,
-  autoplay: {
-    interval: 250,
-    pauseOnHover: {
-      resetProgress: true,
-    },
-  },
-});
+// var splide = new Splide(".main_slide", {
+//   type: "loop",
+//   // perPage: 1,
+//   // arrows: false,
+//   gap: "40px",
+//   start: 0,
+//   autoplay: {
+//     interval: 250,
+//     pauseOnHover: {
+//       resetProgress: true,
+//     },
+//   },
+// });
 
-splide.mount();
+// splide.mount();
 
 var swiper = new Swiper(".event_reser", {
   slidesPerView: 5,
@@ -29,14 +29,14 @@ var swiper = new Swiper(".event_reser", {
 });
 
 $(function () {
-  $(".mainitem_txt .minitxt_a").on("click", function () {
-    if ($(this).parent().hasClass("active")) {
-      $(this).parent().removeClass("active");
-    } else {
-      $(".mainitem_tit_mini > li").removeClass("active");
-      $(this).parent().addClass("active");
-    }
-  });
+  // $(".mainitem_txt .minitxt_a").on("click", function () {
+  //   if ($(this).parent().hasClass("active")) {
+  //     $(this).parent().removeClass("active");
+  //   } else {
+  //     $(".mainitem_tit_mini > li").removeClass("active");
+  //     $(this).parent().addClass("active");
+  //   }
+  // });
 
   // show content
   $(".mainitem_tit_mini li:first-child").addClass("active");
@@ -52,5 +52,15 @@ $(function () {
     var activeTab = $(this).find("a").attr("href");
     $(activeTab).show();
     return false;
+  });
+
+  $(".menu_titlst li").click(function () {
+    $(".menu_titlst li").removeClass("on");
+    $(this).addClass("on");
+  });
+
+  $(".numberlist li").click(function () {
+    $(".numberlist li").removeClass("active");
+    $(this).addClass("active");
   });
 });

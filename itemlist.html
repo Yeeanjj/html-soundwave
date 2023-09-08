@@ -70,25 +70,37 @@
     </div>
     <div class="wrap">
       <main id="main">
-        <section class="itemlst_wrap">
+        <section class="ltemlst_menutab">
           <div class="inner itemlst_menu">
             <div class="itemlst_menutit_txt">
               <h2 class="menu_tit">CD · DVD</h2>
               <span class="menumini_tit">국내</span>
             </div>
             <ul class="menu_titlst">
-              <li class="titlst">K-POP</li>
-              <li class="titlst">O.S.T</li>
-              <li class="titlst">ROOK</li>
-              <li class="titlst">유아/교육</li>
-              <li class="titlst">힙합</li>
-              <li class="titlst">성인가요/트로트/국악</li>
-              <li class="titlst">뉴에이지/연주음악</li>
-              <li class="titlst">재즈</li>
-              <li class="titlst">종교/명상</li>
+              <li class="titlst on">
+                <a href="#">K-POP</a>
+              </li>
+              <li class="titlst"><a href="#">O.S.T</a></li>
+              <li class="titlst"><a href="#">ROOK</a></li>
+              <li class="titlst">
+                <a href="#">유아/교육</a>
+              </li>
+              <li class="titlst"><a href="#">힙합</a></li>
+              <li class="titlst">
+                <a href="#">성인가요/트로트/국악</a>
+              </li>
+              <li class="titlst">
+                <a href="#">뉴에이지/연주음악</a>
+              </li>
+              <li class="titlst"><a href="#">재즈</a></li>
+              <li class="titlst">
+                <a href="#">종교/명상</a>
+              </li>
             </ul>
           </div>
-          <div id="tab5" class="inner itemlst_info">
+        </section>
+        <section class="itemlst_albumtab">
+          <div class="inner itemlst_info">
             <ul class="infolst">
               <li class="infolst_item">
                 <a href="#"
@@ -213,8 +225,6 @@
                   </div>
                 </a>
               </li>
-            </ul>
-            <ul class="infolst">
               <li class="infolst_item">
                 <a href="#"
                   ><img
@@ -317,8 +327,6 @@
                   </div>
                 </a>
               </li>
-            </ul>
-            <ul class="infolst">
               <li class="infolst_item">
                 <a href="#"
                   ><img
@@ -442,8 +450,6 @@
                   </div>
                 </a>
               </li>
-            </ul>
-            <ul class="infolst">
               <li class="infolst_item">
                 <a href="#"
                   ><img
@@ -567,34 +573,54 @@
               </li>
             </ul>
           </div>
-          <div class="inner itemlst_number">
-            <ol>
-              <li><a href="#1">1</a></li>
-              <li><a href="#2">2</a></li>
-              <li><a href="#3">3</a></li>
-              <li><a href="#4">4</a></li>
-              <li><a href="#5">5</a></li>
+          <div class="itemlst_number">
+            <ol class="numberlist">
+              <li class="numberlist_pagenate active">
+                <a href="javascript:void()" title="현재 페이지1">1</a>
+              </li>
+              <li class="numberlist_pagenate">
+                <a href="javascript:void()">2</a>
+              </li>
+              <li class="numberlist_pagenate">
+                <a href="javascript:void()">3</a>
+              </li>
+              <li class="numberlist_pagenate">
+                <a href="javascript:void()">4</a>
+              </li>
+              <li class="numberlist_pagenate">
+                <a href="javascript:void()">5</a>
+              </li>
             </ol>
-            <span class="blind">다음</span>
-            <span class="blind">건너뛰기</span>
-          </div>
-          <div class="togo_btn">
-            <button
-              type="button"
-              onclick="$('html').animate({scrollTop : 0})"
-              class="btn-g btn_top"
-            >
-              <span class="blind">위로 가기</span>
-            </button>
-            <button
-              type="button"
-              onclick="$('html').animate({scrollTop : 4600})"
-              class="btn-g btn_bottom"
-            >
-              <span class="blind">아래로 가기</span>
-            </button>
+            <div class="pagenate">
+              <ul class="pagenate_emog">
+                <li class="pagenate_next">
+                  <span class="blind">다음</span>
+                  <a href="javascript:void()" class="nextpage"></a>
+                </li>
+                <li class="pagenate_last">
+                  <span class="blind">끝</span>
+                  <a href="javascript:void()" class="lastpage"></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
+        <div class="togo_btn">
+          <button
+            type="button"
+            onclick="$('html').animate({scrollTop : 0})"
+            class="btn-g btn_top"
+          >
+            <span class="blind">위로 가기</span>
+          </button>
+          <button
+            type="button"
+            onclick="$('html').animate({scrollTop : 4600})"
+            class="btn-g btn_bottom"
+          >
+            <span class="blind">아래로 가기</span>
+          </button>
+        </div>
       </main>
     </div>
   </body>
