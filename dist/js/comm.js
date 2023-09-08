@@ -1,18 +1,18 @@
-// var splide = new Splide(".main_slide", {
-//   type: "loop",
-//   // perPage: 1,
-//   // arrows: false,
-//   gap: "40px",
-//   start: 0,
-//   autoplay: {
-//     interval: 250,
-//     pauseOnHover: {
-//       resetProgress: true,
-//     },
-//   },
-// });
+var splide = new Splide(".main_slide", {
+  type: "loop",
+  // perPage: 1,
+  // arrows: false,
+  gap: "40px",
+  start: 0,
+  autoplay: {
+    interval: 250,
+    pauseOnHover: {
+      resetProgress: true,
+    },
+  },
+});
 
-// splide.mount();
+splide.mount();
 
 var swiper = new Swiper(".event_reser", {
   slidesPerView: 5,
