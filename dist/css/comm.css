@@ -1100,6 +1100,13 @@ legend {
 .itemlst_number {
   margin: 100px auto 135px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemlst_number a {
+  display: block;
+  width: 30px;
 }
 
 .numberlist {
@@ -1116,44 +1123,26 @@ legend {
 .numberlist .numberlist_pagenate.active a {
   color: #222;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .numberlist .numberlist_pagenate:last-child {
   padding-right: 0;
 }
 .numberlist .numberlist_pagenate a {
-  display: block;
-  width: 30px;
   font-size: 1.25rem;
   font-weight: 400;
   color: #888;
 }
 
-.pagenate_emog {
-  position: absolute;
-  top: 4px;
-  left: 60%;
-  transform: translateX(-80%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #888;
-}
-.pagenate_emog a {
-  display: block;
-  width: 30px;
-}
-.pagenate_emog .pagenate_next {
-  margin-right: 5px;
-}
-.pagenate_emog .pagenate_next .nextpage::before {
+.nextpage::before {
   content: "\e5e1";
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: "Material Symbols Outlined";
 }
-.pagenate_emog .lastpage::after {
+
+.lastpage::after {
   content: "\ea50";
-  font-size: 1.25rem;
+  font-size: 34px;
   font-family: "Material Symbols Outlined";
 }
 
@@ -1401,44 +1390,44 @@ legend {
   margin-bottom: 25px;
 }
 
-.notionlist_pagenate {
+.notionlst_number {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 80px 0 100px;
 }
-.notionlist_pagenate .notinumber {
-  margin-right: 20px;
-}
-.notionlist_pagenate .notinumber.active a {
-  font-weight: 700;
+
+.fristpage::before {
+  content: "\e2ea";
+  font-family: "Material Symbols Outlined";
   font-size: 1.5rem;
 }
-.notionlist_pagenate .notinumber a {
+
+.notionlist_pagenate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notionlist_pagenate a {
   display: block;
   width: 30px;
-  line-height: 36px;
   font-size: 1.25rem;
   text-align: center;
+  line-height: 36px;
+  font-weight: 400;
+  color: #888;
 }
-.notionlist_pagenate .notinumber:first-child {
-  position: relative;
+.notionlist_pagenate .notinumber {
+  margin: 0 12.5px;
 }
-.notionlist_pagenate .notinumber:first-child::before {
-  font-size: 24px;
-  position: absolute;
-  top: 0;
-  left: -30px;
-  content: "\e5e0";
-  font-family: "Material Symbols Outlined";
+.notionlist_pagenate .notinumber.active a {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #222;
 }
-.notionlist_pagenate .notinumber:last-child {
-  position: relative;
-}
-.notionlist_pagenate .notinumber:last-child::after {
-  font-size: 24px;
-  position: absolute;
-  top: 0;
-  right: -35px;
+
+.last_page::after {
   content: "\e5e1";
   font-family: "Material Symbols Outlined";
+  font-size: 1.5rem;
 }/*# sourceMappingURL=comm.css.map */
