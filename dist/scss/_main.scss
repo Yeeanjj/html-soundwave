@@ -38,6 +38,7 @@
     }
   }
 }
+
 .event_reser_slide {
   height: 550px;
   .reser_tit {
@@ -54,7 +55,6 @@
     margin-top: 50px;
     .slide_sub {
       position: relative;
-      // margin-top: 50px;
       a {
         display: block;
         width: 240px;
@@ -79,6 +79,8 @@
     // width: 25% !important;
     background: #333;
   }
+}
+@media screen and (max-width: 1024px) {
 }
 .sec-feed {
   position: relative;
@@ -179,6 +181,11 @@
         height: 100%;
       }
     }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sec-feed {
+    display: none;
   }
 }
 .sec-mainitem {

@@ -10,8 +10,10 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.bg-gary {
-  background: $gray-e;
+@media screen and (max-width: 1024px) {
+  .inner {
+    margin: 0 30px;
+  }
 }
 // .wrap {
 //   padding-top: 160px;
