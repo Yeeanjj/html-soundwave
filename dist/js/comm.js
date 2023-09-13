@@ -38,4 +38,9 @@ $(function () {
     $(".numberlist li").removeClass("active");
     $(this).addClass("active");
   });
+
+  $(".notionlist_pagenate li").click(function () {
+    $(".notionlist_pagenate li").removeClass("active");
+    $(this).addClass("active");
+  });
 });

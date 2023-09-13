@@ -1384,7 +1384,7 @@ legend {
 }
 .notionlist .list_txt {
   margin-top: 25px;
-  border-bottom: 1px solid rgba(34, 34, 34, 0.6);
+  border-bottom: 1px solid rgba(136, 136, 136, 0.5);
 }
 .notionlist .list_txt:first-child {
   margin-top: 0;
@@ -1409,16 +1409,25 @@ legend {
 .notionlist_pagenate .notinumber {
   margin-right: 20px;
 }
+.notionlist_pagenate .notinumber.active a {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 .notionlist_pagenate .notinumber a {
+  display: block;
+  width: 30px;
+  line-height: 36px;
   font-size: 1.25rem;
+  text-align: center;
 }
 .notionlist_pagenate .notinumber:first-child {
   position: relative;
 }
 .notionlist_pagenate .notinumber:first-child::before {
+  font-size: 24px;
   position: absolute;
-  top: 4px;
-  left: -25px;
+  top: 0;
+  left: -30px;
   content: "\e5e0";
   font-family: "Material Symbols Outlined";
 }
@@ -1426,9 +1435,10 @@ legend {
   position: relative;
 }
 .notionlist_pagenate .notinumber:last-child::after {
+  font-size: 24px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -35px;
   content: "\e5e1";
   font-family: "Material Symbols Outlined";
 }/*# sourceMappingURL=comm.css.map */
