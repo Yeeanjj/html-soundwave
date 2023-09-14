@@ -1,14 +1,26 @@
 var swiper = new Swiper(".event_reser", {
-  slidesPerView: 5,
-  spaceBetween: 20,
   loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
+  },
+  breakpoints: {
+    429: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    745: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    1025: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
   },
 });
 

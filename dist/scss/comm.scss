@@ -12,12 +12,14 @@
 }
 @media screen and (max-width: 1024px) {
   .inner {
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width: 744px) {
+  .inner {
     margin: 0 30px;
   }
 }
-// .wrap {
-//   padding-top: 160px;
-// }
 
 // header
 #header {
@@ -251,5 +253,11 @@
     }
   }
 }
-
+@media screen and (max-width: 1024px) {
+  #main {
+    .togo_btn {
+      right: 30px;
+    }
+  }
+}
 @import "main", "contents";
