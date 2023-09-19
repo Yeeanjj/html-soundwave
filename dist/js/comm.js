@@ -1,9 +1,9 @@
 var swiper = new Swiper(".event_reser", {
   loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
