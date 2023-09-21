@@ -200,12 +200,13 @@
           // arrows: false,
           gap: "40px",
           start: 0,
-          autoplay: {
-            interval: 250,
-            pauseOnHover: {
-              resetProgress: true,
-            },
-          },
+          // autoplay: {
+          //   interval: 250,
+          //   pauseOnHover: {
+          //     resetProgress: true,
+          //   },
+          // },
+          autoWidth: true,
         });
 
         splide.mount();
@@ -214,7 +215,7 @@
         <section class="inner sec-event">
           <div class="event_reser_slide">
             <div class="swiper event_reser">
-              <div class="reser_tit"><h2>예약음반</h2></div>
+              <h2 class="section-tit reser_tit">예약음반</h2>
               <div class="swiper-wrapper slide_reser">
                 <div class="swiper-slide slide_sub">
                   <a href="#">
@@ -222,13 +223,13 @@
                       src="./images/main/reser_UNE.jpg"
                       alt="The Lost Diary"
                     />
-                    <span class="blind">으네(UNE)-The Lost Diary</span>
+                    <span class="sub_txt">으네 (UNE) <br />The Lost Diary</span>
                   </a>
                 </div>
                 <div class="swiper-slide slide_sub">
                   <a href="#">
                     <img src="./images/main/reser_Aro.jpg" alt="정아로" />
-                    <span class="blind">정아로-2nd EP[Remain]</span>
+                    <span class="sub_txt">정아로<br />2nd EP [Remain]</span>
                   </a>
                 </div>
                 <div class="swiper-slide slide_sub">
@@ -237,7 +238,9 @@
                       src="./images/main/reser_onewe.jpg"
                       alt="2ND SPECIAL ALBUM [XOXO]"
                     />
-                    <span class="blind">원위(ONEWE)-스페셜앨범[XOXO]</span>
+                    <span class="sub_txt"
+                      >원위 (ONEWE)<br />스페셜앨범 [XOXO]</span
+                    >
                   </a>
                 </div>
                 <div class="swiper-slide slide_sub">
@@ -246,8 +249,8 @@
                       src="./images/main/reser_festa.jpg"
                       alt="PURPLE KISS 1ST SINGLE ALBUM FESTA"
                     />
-                    <span class="blind">
-                      퍼플키스(PURPLE KISS)-싱글 1집[FESTA](Main Ver.)
+                    <span class="sub_txt">
+                      퍼플키스 (PURPLE KISS)<br />[FESTA](Main Ver.)
                     </span>
                   </a>
                 </div>
@@ -257,24 +260,24 @@
                       src="./images/main/reser_TRENDZ.jpg"
                       alt="TRENDZ POCAALBUM"
                     />
-                    <p class="blind">
-                      트렌드지(TRENDZ)-싱글 3집[STILL ON MY WAY]<br />(POCAALBUM)(2종세트)
-                    </p></a
+                    <span class="sub_txt">
+                      트렌드지 (TRENDZ)<br />[STILL ON MY WAY]
+                    </span></a
                   >
                 </div>
                 <div class="swiper-slide slide_sub">
                   <a href="#"
                     ><img src="./images/main/reser.trendz.jpg" alt="TRENDZ" />
-                    <span class="blind"
-                      >트렌드지(TRENDZ)-싱글 3집[STILL ON MY WAY]
+                    <span class="sub_txt"
+                      >트렌드지 (TRENDZ)<br />[STILL ON MY WAY]
                     </span>
                   </a>
                 </div>
                 <div class="swiper-slide slide_sub">
                   <a href="#">
                     <img src="./images/main/reser_key.jpg" alt="" />
-                    <span class="blind"
-                      >키(KEY)-미니 2집[Good&Great](PhotoBook ver.)
+                    <span class="sub_txt"
+                      >키 (KEY)<br />[Good&Great](PhotoBook ver.)
                     </span>
                   </a>
                 </div>
@@ -284,8 +287,8 @@
                       src="./images/main/reser_dual.jpg"
                       alt="The Rose DUAL DELUXE ALBUM PREVIEW PREORDER MOW <br> DAWM VERSION 177mm x 243mm <br> DUSK VERSION 177mm x 243mm"
                     />
-                    <span class="blind"
-                      >더 로즈(Teh Rose)-[DUAL(Deluxe Box Album)](2종세트)
+                    <span class="sub_txt"
+                      >더 로즈 (Teh Rose)<br />[DUAL(Deluxe Box Album)]
                     </span>
                   </a>
                 </div>
@@ -295,8 +298,8 @@
                       src="./images/main/reser_dual2.jpg"
                       alt="The Rose DUAL DELUXE ALBUM PREVIEW PREORDER MOW <br> DAWM VERSION 177mm x 243mm <br> DUSK VERSION 177mm x 243mm"
                     />
-                    <span class="blind"
-                      >더 로즈(Teh Rose)-[DUAL(Jewel Case Album)](2종세트)
+                    <span class="sub_txt"
+                      >더 로즈 (Teh Rose)<br />[DUAL(Jewel Case Album)]
                     </span>
                   </a>
                 </div>
@@ -306,9 +309,9 @@
                       src="./images/main/reser.brave.jpg"
                       alt="BRAVE CIRLS BEST ALBUM"
                     />
-                    <p class="blind">
-                      브레이브걸스(Brave Girls)-[BRAVE GIRLS BEST ALBUM]
-                    </p>
+                    <span class="sub_txt">
+                      브레이브걸스 (Brave Girls)<br />[BRAVE GIRLS BEST ALBUM]
+                    </span>
                   </a>
                 </div>
                 <div class="swiper-slide slide_sub">
@@ -317,114 +320,9 @@
                       src="./images/main/reser_yn.jpg"
                       alt="The Breakup Archives2 이별일기2 yunb"
                     />
-                    <p class="blind">
-                      윤비(YUNB)-정규 2집[The Breakup Archives 2](이별일기2)
-                    </p>
-                  </a>
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#">
-                    <img
-                      src="./images/main/reser_UNE.jpg"
-                      alt="The Lost Diary"
-                    /><span class="blind">으네(UNE)-The Lost Diary</span></a
-                  >
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#">
-                    <img src="./images/main/reser_Aro.jpg" alt="" /><span
-                      class="blind"
-                      >정아로-2nd EP[Remain]</span
-                    ></a
-                  >
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img
-                      src="./images/main/reser_onewe.jpg"
-                      alt="2ND SPECIAL ALBUM [XOXO]"
-                    /><span class="blind">원위(ONEWE)-스페셜앨범[XOXO]</span></a
-                  >
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img
-                      src="./images/main/reser_festa.jpg"
-                      alt="PURPLE KISS 1ST SINGLE ALBUM FESTA"
-                    /><span class="blind">
-                      퍼플키스(PURPLE KISS)-싱글 1집[FESTA](Main Ver.)
-                    </span></a
-                  >
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img
-                      src="./images/main/reser_TRENDZ.jpg"
-                      alt="TRENDZ POCAALBUM"
-                    />
-                    <p class="blind">
-                      트렌드지(TRENDZ)-싱글 3집[STILL ON MY WAY]<br />(POCAALBUM)(2종세트)
-                    </p>
-                  </a>
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img
-                      src="./images/main/reser.trendz.jpg"
-                      alt="TRENDZ"
-                    /><span class="blind"
-                      >트렌드지(TRENDZ)-싱글 3집[STILL ON MY WAY]
+                    <span class="sub_txt">
+                      윤비(YUNB)<br />[The Breakup Archives 2](이별일기2)
                     </span>
-                  </a>
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img src="./images/main/reser_key.jpg" alt="" />
-                    <span class="blind"
-                      >키(KEY)-미니 2집[Good&Great](PhotoBook ver.)
-                    </span>
-                  </a>
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img
-                      src="./images/main/reser_dual.jpg"
-                      alt="The Rose DUAL DELUXE ALBUM PREVIEW PREORDER MOW <br> DAWM VERSION 177mm x 243mm <br> DUSK VERSION 177mm x 243mm"
-                    /><span class="blind"
-                      >더 로즈(Teh Rose)-[DUAL(Deluxe Box Album)](2종세트)
-                    </span>
-                  </a>
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img
-                      src="./images/main/reser_dual2.jpg"
-                      alt="The Rose DUAL DELUXE ALBUM PREVIEW PREORDER MOW <br> DAWM VERSION 177mm x 243mm <br> DUSK VERSION 177mm x 243mm"
-                    /><span class="blind"
-                      >더 로즈(Teh Rose)-[DUAL(Jewel Case Album)](2종세트)
-                    </span>
-                  </a>
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img
-                      src="./images/main/reser.brave.jpg"
-                      alt="BRAVE CIRLS BEST ALBUM"
-                    />
-                    <p class="blind">
-                      브레이브걸스(Brave Girls)-[BRAVE GIRLS BEST ALBUM]
-                    </p>
-                  </a>
-                </div>
-                <div class="swiper-slide slide_sub">
-                  <a href="#"
-                    ><img
-                      src="./images/main/reser_yn.jpg"
-                      alt="The Breakup Archives2 이별일기2 yunb"
-                    />
-                    <p class="blind">
-                      윤비(YUNB)-정규 2집[The Breakup Archives 2](이별일기2)
-                    </p>
                   </a>
                 </div>
               </div>
@@ -549,7 +447,7 @@
         <section class="inner sec-mainitem">
           <div class="mainitem_lst">
             <div class="mainitem_txt">
-              <h2 class="mainitem_tit">CD · DVD</h2>
+              <h2 class="section-tit mainitem_tit">CD · DVD</h2>
               <ul class="mainitem_tit_mini">
                 <li class="mini_txt active">
                   <a href="#tab1">국내</a>
@@ -1359,7 +1257,7 @@
         </div>
         <section class="inner sec-maingoods">
           <div class="goods_lst">
-            <h2 class="goods_tit">GOODS</h2>
+            <h2 class="section-tit goods_tit">GOODS</h2>
             <ul class="goods_lst_items">
               <li class="goods_images">
                 <a href="#"
@@ -1367,9 +1265,9 @@
                     src="./images/main/goods_treasure.jpg"
                     alt="3rd ANNIVERSARY MAGAZINE"
                   />
-                  <span class="blind"
-                    >트레저(TREASURE)-[3rd ANNIVERSARY MAGAZINE]
-                  </span>
+                  <p class="goods_images_txt">
+                    트레저(TREASURE)<br />[3rd ANNIVERSARY MAGAZINE]
+                  </p>
                 </a>
               </li>
               <li class="goods_images">
@@ -1378,9 +1276,9 @@
                     src="./images/main/goods_ive1.jpg"
                     alt="포토카드 홀더"
                   />
-                  <p class="blind">
-                    미니브(MINIVE)[MINIVE PARK]OFFICIAL MD-포토카드 홀더
-                    PHOTOCARD HOLDER
+                  <p class="goods_images_txt">
+                    미니브(MINIVE)<br />[MINIVE PARK]OFFICIAL MD PHOTOCARD
+                    HOLDER
                   </p>
                 </a>
               </li>
@@ -1390,9 +1288,9 @@
                     src="./images/main/goods_ive2.jpg"
                     alt="포토카드 바인더"
                   />
-                  <p class="blind">
-                    미니브(MINIVE)[MINIVE PARK]OFFICIAL MD-포토카드 바인더
-                    PHOTOCARD BINDER
+                  <p class="goods_images_txt">
+                    미니브(MINIVE)<br />[MINIVE PARK]OFFICIAL MD PHOTOCARD
+                    BINDER
                   </p>
                 </a>
               </li>
@@ -1402,8 +1300,8 @@
                     src="./images/main/goods_kimhyeyoon.jpg"
                     alt="친필 사인 엽서 3종 중 1종 랜덤 증정"
                   />
-                  <p class="blind">
-                    김혜윤(Kim Hye Yoon)[HYE-PPY DAY]Official MD-MD 세트 MD SET
+                  <p class="goods_images_txt">
+                    김혜윤(Kim Hye Yoon)<br />[HYE-PPY DAY]Official MD SET
                     <br />친필 사인 엽서 3종 중 1종 랜덤 증정
                   </p>
                 </a>
@@ -1414,8 +1312,8 @@
                     src="./images/main/goods_kihyun.jpg"
                     alt="11월을 담은 순간 티셔츠"
                   />
-                  <p class="blind">
-                    기현(KIHYUN) PHOTO EXHIBITION 11월을 담은 순간 - 티셔츠
+                  <p class="goods_images_txt">
+                    기현(KIHYUN)<br />PHOTO EXHIBITION 11월을 담은 순간
                   </p>
                 </a>
               </li>
@@ -1425,9 +1323,9 @@
                     src="./images/main/goods_phantom.jpg"
                     alt="팬텀싱어 CONCERT CONCERT OFFICIAL MD"
                   />
-                  <p class="blind">
-                    팬텀싱어 4(PHANTOM SINGER 4)OFFICIAL MD-아크릴 응원봉
-                    ACRYLIC LIGHT STICK
+                  <p class="goods_images_txt">
+                    팬텀싱어 4(PHANTOM SINGER 4)<br />OFFICIAL MD ACRYLIC LIGHT
+                    STICK
                   </p>
                 </a>
               </li>
@@ -1437,17 +1335,17 @@
                     src="./images/main/goods_vanner.jpg"
                     alt="OFFICIAL MD VANNER ACRYLIC LIFHT STICK"
                   />
-                  <span class="blind">
-                    배너(VANNER) OFFICIAL MD-응원봉 OFFICIAL LIGHT STICK
-                  </span>
+                  <p class="goods_images_txt">
+                    배너(VANNER)<br />OFFICIAL MD<br />OFFICIAL LIGHT STICK
+                  </p>
                 </a>
               </li>
               <li class="goods_images">
                 <a href="#"
                   ><img src="./images/main/goods-mirae.jpg" alt="mirae" />
-                  <span class="blind">
-                    미래소년(MIRAE)-응원봉 ACRYLIC LIGHT STICK
-                  </span>
+                  <p class="goods_images_txt">
+                    미래소년(MIRAE)<br />ACRYLIC LIGHT STICK
+                  </p>
                 </a>
               </li>
             </ul>
@@ -1458,7 +1356,7 @@
         </section>
         <section class="sec-artist">
           <div class="inner artist_lst">
-            <h2 class="artist_tit">ARTIST</h2>
+            <h2 class="section-tit artist_tit">ARTIST</h2>
             <div class="artist_images">
               <ul class="artimg_wrap">
                 <li class="lst_star">

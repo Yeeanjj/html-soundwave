@@ -1028,7 +1028,6 @@ legend {
 }
 .sec-maingoods .goods_lst .goods_lst_items .goods_images {
   margin-bottom: 50px;
-  width: 45%;
 }
 .sec-maingoods .goods_lst .goods_lst_items .goods_images a {
   position: relative;
@@ -1105,6 +1104,9 @@ legend {
   }
 }
 @media screen and (max-width: 768px) {
+  .sec-maingoods .goods_lst .goods_lst_items .goods_images {
+    width: 45%;
+  }
   .sec-maingoods .goods_lst .goods_lst_items .goods_images:nth-child(n+7):nth-child(-n+8) {
     display: none;
   }
