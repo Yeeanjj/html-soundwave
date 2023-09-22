@@ -2,7 +2,7 @@
 
 ## 리뉴얼 사이트
 
-- 메인 : <a href="https://yeeanjj.github.io/html-soundwave/" target="_blank">main</a>
+- 메인 : <a href="https://gguriman.me/html-soundwave/" target="_blank">main</a>
 - 아이템 리스트 : <a href="https://yeeanjj.github.io/html-soundwave/itemlist.html" target="_blank"> Item List </a>
 - 아이템 상세 페이지 : <a href="https://yeeanjj.github.io/html-soundwave/goodslist.html" target="_blank"> Goods List </a>
 - 공지사항 : <a href="https://yeeanjj.github.io/html-soundwave/notion.html" target="_blank"> Notion </a>
