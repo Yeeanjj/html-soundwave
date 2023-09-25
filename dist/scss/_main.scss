@@ -123,7 +123,9 @@
             display: block;
           }
           .sub_text {
-            font-weight: 600;
+            font-weight: 400;
+            font-size: 0.875rem;
+            margin-top: 10px;
           }
         }
         // &:hover {
@@ -314,7 +316,7 @@
         &::after {
           position: absolute;
           top: -10px;
-          right: 12px;
+          right: 13px;
           content: "";
           background: rgba(237, 237, 237, 0.5);
           z-index: -1;
@@ -369,7 +371,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 50px 19px;
+    padding: 50px 16px;
   }
   .item_oderbox_tit {
     display: block;
@@ -676,7 +678,7 @@
             }
             .goods_images_text {
               margin-top: 5px;
-              font-weight: 600;
+              font-weight: 400;
             }
           }
         }
