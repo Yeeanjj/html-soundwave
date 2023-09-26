@@ -259,12 +259,12 @@
           // arrows: false,
           gap: "40px",
           start: 0,
-          // autoplay: {
-          //   interval: 250,
-          //   pauseOnHover: {
-          //     resetProgress: true,
-          //   },
-          // },
+          autoplay: {
+            interval: 250,
+            pauseOnHover: {
+              resetProgress: true,
+            },
+          },
           autoWidth: true,
         });
 
@@ -1533,10 +1533,12 @@
             </ul>
           </div>
           <div class="info_return">
-            <span>RETURN/EXCHAGE</span>
+            <span class="return_tit">RETURN/EXCHAGE</span>
             <div class="return_adderss">
-              <span>반품주소 : 경기도 고양시 덕양구 대자동 205-6</span>
-              <span>
+              <span class="add_txtreturn"
+                >반품주소 : 경기도 고양시 덕양구 대자동 205-6</span
+              >
+              <span class="add_txtex">
                 교환 및 반품을 원하시는 상품은 반드시 반품 주소로 보내주셔야
                 합니다.
               </span>
@@ -1548,7 +1550,10 @@
             <ul class="adderss_txt">
               <li class="txtlist">
                 상호명 : 주식회사 사운드웨이브 | 대표 : 어주연 | 사업자등록번호
-                : 121-86-36395<a href="#">[사업자정보확인]</a>
+                : 121-86-36395<a
+                  href="https://www.ftc.go.kr/www/biz/bizCommList.do?key=5375&searchCnd=wrkr_no&searchKrwd=1218636395"
+                  >[사업자정보확인]</a
+                >
               </li>
               <li class="txtlist">
                 통신판매업신고 : 2018-고양덕양구-1367호 | TEL : 02-381-3758 |
@@ -1558,29 +1563,43 @@
                 주소 : 경기도 고양시 덕양구 삼송로193번길 1-6 2층
               </li>
               <li class="txtlist">
-                개인정보 보호 책임자 : 어주연 | Email:
+                개인정보 보호 책임자 : 어주연 | Email :
                 soundwave@sound-wave.co.kr
               </li>
             </ul>
           </div>
           <div class="footer_img">
-            <div class="footer_sns">
-              <ul>
-                <li class="facebook"><span class="blind">페이스북</span></li>
-                <li class="twitter"><span class="blind">트위터</span></li>
-                <li class="instergram">
-                  <span class="blind">인스타그램</span>
-                </li>
-              </ul>
-            </div>
-            <div class="img_wrap">
-              <ul>
-                <li class="hanteo"><span class="blind">한터패밀리</span></li>
-                <li class="family">
-                  <span class="blind">패밀리이미지</span>
-                </li>
-              </ul>
-            </div>
+            <ul class="footer_sns">
+              <li class="sns_lst">
+                <a href="https://www.facebook.com/soundwaveee" class="sns_f"
+                  ><span class="blind">페이스북</span></a
+                >
+              </li>
+              <li class="sns_lst">
+                <a href="https://twitter.com/SOUNDWAVE_KOREA" class="sns_t"
+                  ><span class="blind">트위터</span></a
+                >
+              </li>
+              <li class="sns_lst">
+                <a
+                  href="https://www.instagram.com/SOUNDWAVE_KOREA/"
+                  class="instar"
+                  ><span class="blind">인스타그램</span></a
+                >
+              </li>
+            </ul>
+            <ul class="img_wrap">
+              <li class="togo_img">
+                <a href="https://www.hanteo.com/?l=ko&m=false" class="hanteo"
+                  ><span class="blind">한터패밀리</span></a
+                >
+              </li>
+              <li class="togo_img">
+                <a href="#" class="family"
+                  ><span class="blind">패밀리이미지</span></a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </footer>

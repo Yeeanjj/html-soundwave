@@ -160,260 +160,192 @@
   }
 }
 #footer {
-  height: 520px;
   background: #fefefe;
   color: #222;
-}
-.fooer_gnb {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #e8e8e8;
-  .gnb_menuone {
+  border-top: 1px solid #222;
+  .fooer_gnb {
     display: flex;
     align-items: center;
-    li {
-      display: block;
-      margin-right: 20px;
-      &:last-child {
-        margin-right: 0;
-      }
-      .company {
-        font-weight: 600;
-      }
-    }
-  }
-  .gnb_menutwo {
-    display: flex;
-    align-items: center;
-    li {
-      display: block;
-      margin-left: 20px;
-      &:first-child {
-        margin-left: 0;
-      }
-      .user {
-        font-weight: 600;
-      }
-      .fq {
-        display: flex;
-        align-items: center;
-        &::after {
-          content: "\e5cf";
-          font-family: "Material Symbols Outlined";
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+    .gnb_menuone {
+      display: flex;
+      align-items: center;
+      li {
+        display: block;
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        .company {
           font-weight: 600;
         }
       }
     }
+    .gnb_menutwo {
+      display: flex;
+      align-items: center;
+      li {
+        display: block;
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+        .user {
+          font-weight: 600;
+        }
+        .fq {
+          display: flex;
+          align-items: center;
+          &::after {
+            content: "\e5cf";
+            font-family: "Material Symbols Outlined";
+            font-weight: 600;
+          }
+        }
+      }
+    }
   }
-}
-.ft_top {
-  text-align: center;
-  margin-top: 15px;
-}
-.center_tit {
-  display: block;
-  color: #888;
-}
-.center_call {
-  .callcenter {
-    font-size: 1.125rem;
-    font-weight: 400;
+  .ft_top {
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
   }
-  .callnum {
-    font-size: 24px;
-  }
-}
-.centertime {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  li {
+  .center_tit {
     display: block;
-    margin-right: 15px;
-    &::after {
-      content: "|";
+    color: #888;
+  }
+  .center_call {
+    .callcenter {
+      font-size: 1.125rem;
+      font-weight: 400;
+    }
+    .callnum {
+      font-size: 1.5rem;
+    }
+  }
+  .centertime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    li {
+      position: relative;
+      // display: block;
+      margin-right: 20px;
+      &::after {
+        position: absolute;
+        top: 0;
+        right: -10px;
+        content: "|";
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .info_return {
+    margin-top: 30px;
+    .return_tit {
+      display: block;
+      color: #888;
+    }
+    .add_txtreturn {
+      margin-top: 10px;
+      display: block;
+      font-size: 1.125rem;
+    }
+    .add_txtex {
+      display: block;
+      font-weight: 400;
+      color: #888;
+      margin-top: 10px;
+    }
+  }
+  .ft_bt {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #e8e8e8;
+    }
+  }
+  .adderss_txt {
+    color: #444;
+    .txtlist {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        margin-left: 5px;
+      }
+    }
+  }
+  .footer_img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footer_sns {
+    display: flex;
+    margin-bottom: 20px;
+    .sns_lst {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+      .sns_f {
+        background: url(../../images/comm/sns_f.png) no-repeat 0 0;
+      }
+      .sns_t {
+        background: url(../../images/comm/sns_t.png) no-repeat 0 0;
+      }
+      .instar {
+        background: url(../../images/comm/sns_i.png) no-repeat 0 0;
+      }
+    }
+  }
+  .img_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .togo_img {
+      display: block;
+      a {
+        display: block;
+        height: 85px;
+      }
+      .hanteo {
+        width: 187px;
+        background: url(../../images/comm/hanteo.png) no-repeat 0 0;
+      }
+      .family {
+        width: 161px;
+        background: url(../../images/comm/footerfamily\ 1.png) no-repeat 0 0;
+      }
     }
   }
 }
-// #header {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   z-index: 1000;
-//   border-bottom: 1px solid $b;
-//   background: rgba($w, 0.5);
-//   box-sizing: border-box;
-//   .inner {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//   }
-//   .head__right {
-//     display: flex;
-//   }
-// }
-// .lst-util {
-//   display: flex;
-//   li {
-//     display: flex;
-//   }
-//   .btn-g,
-//   a {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 40px;
-//     height: $headerHeight;
-//     .material-icons-outlined {
-//       font-size: 25px;
-//     }
-//   }
-// }
-// .logo {
-//   position: relative;
-//   z-index: 1100;
-// }
-// .gnb-wrap {
-//   .input-burger {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 0;
-//     height: 0;
-//     opacity: 0;
-//     &:checked,
-//     &:hover {
-//       // input이 선택 됐을 때
-//       & + label {
-//         .bar {
-//           background: #333;
-//           transition: all 0.3s;
-//           &:nth-child(2) {
-//             transform: rotate(45deg) translate(5px, 5px);
-//             transform-origin: 50% 50%;
-//           }
-//           &:nth-child(3) {
-//             opacity: 0;
-//           }
-//           &:nth-child(4) {
-//             transform: rotate(-45deg) translate(5px, -5px);
-//           }
-//         }
-//       }
-//       & ~ #gnb {
-//         right: 0;
-//       }
-//     }
-//   }
-//   .label-burger {
-//     position: relative;
-//     z-index: 1100;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     width: 40px;
-//     height: $headerHeight;
-//     cursor: pointer;
-//     .bar {
-//       display: block;
-//       width: 26px;
-//       height: 2px;
-//       background: #333;
-//       // &:nth-child(3) {
-//       //   margin: 5px 0;
-//       // }
-//     }
-//     span {
-//       &:nth-child(3) {
-//         margin: 5px 0;
-//       }
-//     }
-//   }
-//   #gnb {
-//     position: fixed;
-//     top: 0;
-//     right: -100%;
-//     bottom: 0;
-//     width: 100%;
-//     padding: 50px;
-//     background: $gray-e;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     transition: all 0.3s;
-//   }
-// }
 
-.swiper {
-  overflow: visible;
-}
-.swiper-slide {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// // 이미지 게시판 2단
-// .lst-thumb-two-column {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-//   li {
-//     width: calc(50% - 10px);
-//     margin-bottom: 20px;
-//     .thumb-shopping {
-//       position: relative;
-//       overflow: hidden;
-//       width: 100%;
-//       border-radius: 4px;
-//       &::before {
-//         content: "";
-//         display: block;
-//         height: 0;
-//         padding-top: 100%;
-//       }
-//       img {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         object-position: 50%;
-//         transition: transform 0.3s;
-//       }
-//       &::after {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         border-radius: inherit;
-//         border: 1px solid rgba($b, 0.06);
-//         background: rgba($b, 0.03);
-//       }
-//     }
-//   }
-//   a {
-//     &:hover {
-//       img {
-//         transform: scale(1.02);
-//       }
-//     }
-//   }
-// }
 #main {
   position: relative;
   .togo_btn {
@@ -423,7 +355,6 @@
     z-index: 10;
     display: flex;
     flex-direction: column;
-
     btn-g {
       width: 40px;
       height: 40px;

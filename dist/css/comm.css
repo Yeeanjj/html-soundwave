@@ -428,101 +428,185 @@ legend {
 }
 
 #footer {
-  height: 520px;
   background: #fefefe;
   color: #222;
+  border-top: 1px solid #222;
 }
-
-.fooer_gnb {
+#footer .fooer_gnb {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid #e8e8e8;
 }
-.fooer_gnb .gnb_menuone {
+#footer .fooer_gnb .gnb_menuone {
   display: flex;
   align-items: center;
 }
-.fooer_gnb .gnb_menuone li {
+#footer .fooer_gnb .gnb_menuone li {
   display: block;
   margin-right: 20px;
 }
-.fooer_gnb .gnb_menuone li:last-child {
+#footer .fooer_gnb .gnb_menuone li:last-child {
   margin-right: 0;
 }
-.fooer_gnb .gnb_menuone li .company {
+#footer .fooer_gnb .gnb_menuone li .company {
   font-weight: 600;
 }
-.fooer_gnb .gnb_menutwo {
+#footer .fooer_gnb .gnb_menutwo {
   display: flex;
   align-items: center;
 }
-.fooer_gnb .gnb_menutwo li {
+#footer .fooer_gnb .gnb_menutwo li {
   display: block;
   margin-left: 20px;
 }
-.fooer_gnb .gnb_menutwo li:first-child {
+#footer .fooer_gnb .gnb_menutwo li:first-child {
   margin-left: 0;
 }
-.fooer_gnb .gnb_menutwo li .user {
+#footer .fooer_gnb .gnb_menutwo li .user {
   font-weight: 600;
 }
-.fooer_gnb .gnb_menutwo li .fq {
+#footer .fooer_gnb .gnb_menutwo li .fq {
   display: flex;
   align-items: center;
 }
-.fooer_gnb .gnb_menutwo li .fq::after {
+#footer .fooer_gnb .gnb_menutwo li .fq::after {
   content: "\e5cf";
   font-family: "Material Symbols Outlined";
   font-weight: 600;
 }
-
-.ft_top {
+#footer .ft_top {
   text-align: center;
   margin-top: 15px;
+  padding-bottom: 15px;
 }
-
-.center_tit {
+#footer .center_tit {
   display: block;
   color: #888;
 }
-
-.center_call .callcenter {
+#footer .center_call .callcenter {
   font-size: 1.125rem;
   font-weight: 400;
 }
-.center_call .callnum {
-  font-size: 24px;
+#footer .center_call .callnum {
+  font-size: 1.5rem;
 }
-
-.centertime {
+#footer .centertime {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
-.centertime li {
-  display: block;
-  margin-right: 15px;
+#footer .centertime li {
+  position: relative;
+  margin-right: 20px;
 }
-.centertime li::after {
+#footer .centertime li::after {
+  position: absolute;
+  top: 0;
+  right: -10px;
   content: "|";
 }
-
-.swiper {
-  overflow: visible;
+#footer .centertime li:last-child::after {
+  display: none;
 }
-
-.swiper-slide {
-  text-align: center;
+#footer .info_return {
+  margin-top: 30px;
+}
+#footer .info_return .return_tit {
+  display: block;
+  color: #888;
+}
+#footer .info_return .add_txtreturn {
+  margin-top: 10px;
+  display: block;
+  font-size: 1.125rem;
+}
+#footer .info_return .add_txtex {
+  display: block;
+  font-weight: 400;
+  color: #888;
+  margin-top: 10px;
+}
+#footer .ft_bt {
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 40px 0;
 }
-
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
+#footer .ft_bt::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #e8e8e8;
+}
+#footer .adderss_txt {
+  color: #444;
+}
+#footer .adderss_txt .txtlist {
+  margin-bottom: 10px;
+}
+#footer .adderss_txt .txtlist:last-child {
+  margin-bottom: 0;
+}
+#footer .adderss_txt .txtlist a {
+  margin-left: 5px;
+}
+#footer .footer_img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#footer .footer_sns {
+  display: flex;
+  margin-bottom: 20px;
+}
+#footer .footer_sns .sns_lst {
+  margin-right: 20px;
+}
+#footer .footer_sns .sns_lst:last-child {
+  margin-right: 0;
+}
+#footer .footer_sns .sns_lst a {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+#footer .footer_sns .sns_lst .sns_f {
+  background: url(../../images/comm/sns_f.png) no-repeat 0 0;
+}
+#footer .footer_sns .sns_lst .sns_t {
+  background: url(../../images/comm/sns_t.png) no-repeat 0 0;
+}
+#footer .footer_sns .sns_lst .instar {
+  background: url(../../images/comm/sns_i.png) no-repeat 0 0;
+}
+#footer .img_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .img_wrap .togo_img {
+  display: block;
+}
+#footer .img_wrap .togo_img a {
+  display: block;
+  height: 85px;
+}
+#footer .img_wrap .togo_img .hanteo {
+  width: 187px;
+  background: url(../../images/comm/hanteo.png) no-repeat 0 0;
+}
+#footer .img_wrap .togo_img .family {
+  width: 161px;
+  background: url(../../images/comm/footerfamily\ 1.png) no-repeat 0 0;
 }
 
 #main {
