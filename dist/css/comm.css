@@ -913,6 +913,7 @@ legend {
   right: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 @media screen and (max-width: 1024px) {
