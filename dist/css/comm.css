@@ -907,13 +907,6 @@ legend {
   width: 45%;
   height: 400px;
 }
-.sec-feed .feed_lst .feed_cont_video iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
 
 @media screen and (max-width: 1024px) {
   .sec-feed {
