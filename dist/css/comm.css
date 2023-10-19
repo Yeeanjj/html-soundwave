@@ -728,6 +728,10 @@ legend {
   background: #222;
 }
 
+.event_reser {
+  height: 100%;
+}
+
 .event_reser_slide {
   text-align: center;
   height: 750px;
@@ -738,6 +742,7 @@ legend {
 .event_reser_slide .slide_reser {
   position: relative;
   width: 100%;
+  height: 45%;
   margin-top: 100px;
 }
 .event_reser_slide .slide_reser .slide_sub {
@@ -784,7 +789,7 @@ legend {
 }
 .event_reser_slide .swiper-scrollbar {
   position: absolute;
-  bottom: -150px;
+  bottom: 8%;
   right: 0;
   left: 0;
   width: 100%;
@@ -1172,12 +1177,13 @@ legend {
 }
 .mainitem_more {
   position: absolute;
-  bottom: -40px;
+  bottom: -15%;
   right: 0;
   display: flex;
   font-size: 1.125em;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 .mainitem_more .more_txt {
   position: relative;
@@ -1192,9 +1198,6 @@ legend {
   content: "\e941";
   font-size: 22px;
   font-family: "Material Symbols Outlined";
-}
-.mainitem_more .more_txt:hover {
-  font-weight: bold;
 }
 .mainitem_more img {
   display: block;
@@ -1294,6 +1297,10 @@ legend {
   margin-top: 5px;
   font-weight: 400;
 }
+.sec-maingoods .goods_lst .goods_lst_items .goods_images a:hover .point {
+  color: #b5008c;
+  font-weight: 600;
+}
 .sec-maingoods .goods_lst .goods_more {
   position: absolute;
   bottom: 0;
@@ -1351,6 +1358,10 @@ legend {
   padding-bottom: 100px;
 }
 
+.artist_lst {
+  padding-bottom: 100px;
+}
+
 .artist_tit {
   text-align: center;
   margin-top: 100px;
@@ -1358,12 +1369,12 @@ legend {
 
 .artist_images {
   position: relative;
+  margin-top: 70px;
 }
 .artist_images .artimg_wrap {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 90px;
 }
 .artist_images .artimg_wrap .lst_star {
   position: relative;
@@ -1404,6 +1415,9 @@ legend {
 .artist_images .artimg_wrap .lst_star a .artist_name {
   display: none;
 }
+.artist_images .artimg_wrap .lst_star:nth-child(4), .artist_images .artimg_wrap .lst_star:nth-child(5), .artist_images .artimg_wrap .lst_star:nth-child(6) {
+  margin-bottom: 0;
+}
 
 @media screen and (max-width: 1024px) {
   .sec-artist {
@@ -1435,7 +1449,7 @@ legend {
 }
 .artist_more {
   position: absolute;
-  bottom: 0;
+  bottom: -15%;
   right: 0;
   display: flex;
   font-size: 1.125em;

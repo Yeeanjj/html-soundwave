@@ -77,6 +77,9 @@
 //     bottom: -0.5em;
 //   }
 // }
+.event_reser {
+  height: 100%;
+}
 .event_reser_slide {
   text-align: center;
   height: 750px;
@@ -87,6 +90,7 @@
   .slide_reser {
     position: relative;
     width: 100%;
+    height: 45%;
     margin-top: 100px;
     .slide_sub {
       position: relative;
@@ -148,7 +152,7 @@
   }
   .swiper-scrollbar {
     position: absolute;
-    bottom: -150px;
+    bottom: 8%;
     right: 0;
     left: 0;
     width: 100%;
@@ -563,12 +567,13 @@
 }
 .mainitem_more {
   position: absolute;
-  bottom: -40px;
+  bottom: -15%;
   right: 0;
   display: flex;
   font-size: 1.125em;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
   .more_txt {
     position: relative;
     display: flex;
@@ -581,9 +586,6 @@
       content: "\e941";
       font-size: 22px;
       font-family: "Material Symbols Outlined";
-    }
-    &:hover {
-      font-weight: bold;
     }
   }
   img {
@@ -682,6 +684,12 @@
               font-weight: 400;
             }
           }
+          &:hover {
+            .point {
+              color: #b5008c;
+              font-weight: 600;
+            }
+          }
         }
       }
     }
@@ -762,17 +770,21 @@
   background: #fafbfc;
   padding-bottom: 100px;
 }
+.artist_lst {
+  padding-bottom: 100px;
+}
 .artist_tit {
   text-align: center;
   margin-top: 100px;
 }
 .artist_images {
   position: relative;
+  margin-top: 70px;
   .artimg_wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 90px;
+    // margin-top: 90px;
     .lst_star {
       position: relative;
       margin-bottom: 40px;
@@ -812,6 +824,11 @@
         .artist_name {
           display: none;
         }
+      }
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-bottom: 0;
       }
     }
   }
@@ -854,7 +871,7 @@
 }
 .artist_more {
   position: absolute;
-  bottom: 0;
+  bottom: -15%;
   right: 0;
   display: flex;
   font-size: 1.125em;
