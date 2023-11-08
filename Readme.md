@@ -1,6 +1,6 @@
-# Sound Wave 리뉴얼
+# Sound Wave 리디자인
 
-## 리뉴얼 사이트
+## 리디자인 사이트
 
 - 메인 : <a href="https://gguriman.me/html-soundwave/" target="_blank">main</a>
 - 아이템 리스트 : <a href="https://yeeanjj.github.io/html-soundwave/itemlist.html" target="_blank"> Item List </a>
