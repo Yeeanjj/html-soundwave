@@ -10,16 +10,6 @@
   margin: 0 auto;
   overflow: hidden;
 }
-@media screen and (max-width: 1024px) {
-  .inner {
-    margin: 0 50px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .inner {
-    margin: 0 50px;
-  }
-}
 .section-tit {
   display: block;
   font-size: 50px;
@@ -82,10 +72,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: 140px;
       a {
         display: block;
-        width: 140px;
-        height: 110px;
+        width: 100%;
         img {
           width: 100%;
           height: 100%;
@@ -123,12 +113,15 @@
       }
       .mypage {
         background: url(../../images/comm/user.png) no-repeat 0 0;
+        background-size: cover;
       }
       .search {
         background: url(../../images/comm/search.png) no-repeat 0 0;
+        background-size: cover;
       }
       .cart {
         background: url(../../images/comm/shopping-bag.png) no-repeat 0 0;
+        background-size: cover;
       }
     }
   }
@@ -405,9 +398,417 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .inner {
+    margin: 0 5%;
+  }
   #main {
     .togo_btn {
-      right: 30px;
+      right: 5%;
+    }
+  }
+  #footer {
+    .ft_bt {
+      .adderss_txtbox {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    margin: 0 4%;
+  }
+  #header {
+    .header_bar {
+      .header_top_util {
+        position: absolute;
+        top: 0;
+        left: 0;
+        .util_bar {
+          justify-content: normal;
+        }
+      }
+      .logo {
+        top: 0;
+        transform: translateX(-50%);
+        width: 120px;
+        a {
+          width: 100%;
+        }
+      }
+    }
+    .gnb {
+      position: relative;
+      margin: 68px 0 10px;
+      padding: 0;
+      .top_menber {
+        position: absolute;
+        top: -45px;
+        right: 1%;
+      }
+    }
+    .menber_lst {
+      .lst_manber {
+        margin-right: 10px;
+      }
+    }
+    .top_menu {
+      width: 100%;
+      padding-top: 13px;
+      .menu_lst {
+        justify-content: space-between;
+        .lst_menu {
+          font-size: 16px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .util_bar {
+    li {
+      margin-left: 15%;
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  #main .togo_btn {
+    right: 4%;
+  }
+  #footer {
+    .fooer_gnb {
+      padding: 10px 0;
+      font-size: 14px;
+      .gnb_menuone {
+        flex-wrap: nowrap;
+        li {
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .gnb_menutwo {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        li {
+          margin-left: 10px;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .centertime {
+      flex-direction: column;
+      li {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .info_return {
+      margin-top: 15px;
+      .add_txtreturn {
+        font-size: 16px;
+      }
+    }
+    .ft_bt {
+      flex-direction: column;
+      .adderss_txtbox {
+        font-size: 14px;
+      }
+    }
+    .footer_img {
+      margin-top: 20px;
+      width: 100%;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    .footer_sns {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (max-width: 428px) {
+  .inner {
+    margin: 0 4%;
+  }
+  #header {
+    .header_bbsbg {
+      display: none;
+    }
+    .header_bar {
+      .header_top_util {
+        position: absolute;
+        top: 0;
+        left: 0;
+        .util_bar {
+          justify-content: normal;
+        }
+      }
+      .logo {
+        top: 0;
+        transform: translateX(-50%);
+        a {
+          width: 100%;
+        }
+      }
+    }
+    .gnb {
+      position: relative;
+      margin: 65px 0 5px;
+      padding: 0;
+      .top_menber {
+        position: absolute;
+        top: -45px;
+        right: 1%;
+      }
+    }
+    .menber_lst {
+      .lst_manber {
+        margin-right: 10px;
+        a {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .top_menu {
+      width: 100%;
+      padding-top: 15px;
+      .menu_lst {
+        justify-content: space-between;
+        .lst_menu {
+          font-size: 16px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .util_bar {
+    li {
+      margin-left: 15%;
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  #main .togo_btn {
+    right: 4%;
+  }
+  #footer {
+    .fooer_gnb {
+      padding: 8px 0;
+      font-size: 14px;
+      .gnb_menuone {
+        flex-wrap: wrap;
+        li {
+          margin-right: 0;
+          &:first-child {
+            margin-right: 13px;
+          }
+        }
+      }
+      .gnb_menutwo {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        li {
+          margin-left: 0;
+          &:nth-child(2) {
+            margin-left: 10px;
+          }
+          &:last-child {
+            margin-left: 23px;
+          }
+        }
+      }
+    }
+    .centertime {
+      flex-direction: column;
+      li {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .info_return {
+      margin-top: 15px;
+      .add_txtreturn {
+        font-size: 16px;
+      }
+      .add_txtex {
+        margin: 10px auto;
+        width: 50%;
+      }
+    }
+    .ft_bt {
+      flex-direction: column;
+      .adderss_txtbox {
+        font-size: 14px;
+      }
+    }
+    .footer_img {
+      margin-top: 20px;
+      align-items: normal;
+    }
+    .footer_sns {
+      justify-content: flex-end;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .inner {
+    margin: 0 4%;
+  }
+  #header {
+    .header_bbsbg {
+      display: none;
+    }
+    .header_bar {
+      .header_top_util {
+        position: absolute;
+        top: 0;
+        left: 0;
+        .util_bar {
+          justify-content: normal;
+        }
+      }
+      .logo {
+        top: 0;
+        transform: translateX(-50%);
+        width: 100px;
+        a {
+          width: 100%;
+        }
+      }
+    }
+    .gnb {
+      position: relative;
+      margin: 65px 0 5px;
+      padding: 0;
+      .top_menber {
+        position: absolute;
+        top: -45px;
+        right: 1%;
+      }
+    }
+    .menber_lst {
+      .lst_manber {
+        margin-right: 5px;
+        a {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .top_menu {
+      width: 100%;
+      padding-top: 10px;
+      .menu_lst {
+        justify-content: space-between;
+        .lst_menu {
+          font-size: 14px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .util_bar {
+    li {
+      margin-left: 15%;
+      font-size: 12px;
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  #main {
+    .togo_btn {
+      right: 4%;
+      .btn_top {
+        &::after {
+          font-size: 20px;
+          width: 38px;
+          height: 38px;
+          line-height: 38px;
+        }
+      }
+      .btn_bottom {
+        &::after {
+          font-size: 20px;
+          width: 38px;
+          height: 38px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+  #footer {
+    .fooer_gnb {
+      padding: 8px 0;
+      font-size: 12px;
+      .gnb_menuone {
+        flex-wrap: wrap;
+        li {
+          margin-right: 0;
+          &:first-child {
+            margin-right: 12px;
+          }
+        }
+      }
+      .gnb_menutwo {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        li {
+          margin-left: 0;
+          &:nth-child(2) {
+            margin-left: 10px;
+          }
+          &:last-child {
+            margin-left: 22px;
+          }
+        }
+      }
+    }
+    .centertime {
+      flex-direction: column;
+      li {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .info_return {
+      margin-top: 15px;
+      .add_txtreturn {
+        font-size: 16px;
+      }
+      .add_txtex {
+        margin: 10px auto;
+        width: 60%;
+      }
+    }
+    .ft_bt {
+      flex-direction: column;
+      .adderss_txtbox {
+        font-size: 12px;
+      }
+    }
+    .footer_img {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .footer_sns {
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+      .sns_lst {
+        &:last-child {
+          margin-right: 4%;
+        }
+      }
     }
   }
 }
