@@ -40,6 +40,7 @@
     }
   }
 }
+
 .splide__arrow {
   top: 37%;
   width: 3em;
@@ -51,20 +52,51 @@
     background: #222;
   }
 }
+@media screen and (max-width: 375px) {
+  .slide-intro {
+    padding-top: 20px;
+    height: 420px;
+    .main_slide {
+      max-width: 340px;
+      .splide__slide {
+        .slide__txt {
+          margin-top: 20px;
+          strong {
+            font-size: 20px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .splide__arrow {
+      top: 30%;
+    }
+    .splide__arrow--next {
+      right: 0.3em;
+    }
+    .splide__arrow--prev {
+      left: 0.3em;
+    }
+  }
+  .splide__pagination {
+    bottom: -20px;
+  }
+}
 .event_reser {
   height: 100%;
+  padding-bottom: 90px;
 }
 .event_reser_slide {
   text-align: center;
-  height: 750px;
-
   .reser_tit {
     padding-top: 100px;
   }
   .slide_reser {
     position: relative;
     width: 100%;
-    height: 45%;
+    height: 100%;
     margin-top: 100px;
     .slide_sub {
       position: relative;
@@ -79,32 +111,32 @@
           object-fit: cover;
           border-radius: 15px 15px 0 0;
         }
-        .sub_txt {
-          position: relative;
-          font-size: 18px;
-          font-weight: 500;
-          padding: 10px;
-          height: 100px;
-          &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            background: rgba(237, 237, 237, 0.3);
-            // transition: all 0.3s ease;
-            border-radius: 0 0 15px 15px;
-          }
-          span {
-            display: block;
-          }
-          .sub_text {
-            font-weight: 400;
-            font-size: 0.875rem;
-            margin-top: 10px;
-          }
+      }
+      .sub_txt {
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px;
+        height: 100px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -2;
+          background: rgba(237, 237, 237, 0.3);
+          // transition: all 0.3s ease;
+          border-radius: 0 0 15px 15px;
+        }
+        span {
+          display: block;
+        }
+        .sub_text {
+          font-weight: 400;
+          font-size: 0.875rem;
+          margin-top: 10px;
         }
       }
     }
@@ -117,39 +149,57 @@
     width: 100%;
   }
   .swiper-scrollbar-drag {
-    // width: 25% !important;
     background: #333;
   }
 }
-@media screen and (max-width: 1024px) {
+// @media screen and (max-width: 1024px) {
+//   .event_reser_slide {
+//     .reser_tit {
+//       padding-top: 50px;
+//     }
+//   }
+// }
+// @media screen and (max-width: 768px) {
+//   .event_reser_slide {
+//     height: 500px;
+//     .reser_tit {
+//       padding-top: 50px;
+//     }
+//   }
+// }
+// @media screen and (max-width: 428px) {
+//   .event_reser_slide {
+//     height: 460px;
+//     .reser_tit {
+//       padding-top: 30px;
+//       h2 {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+// }
+@media screen and (max-width: 375px) {
   .event_reser_slide {
+    padding-bottom: 40px;
+    .slide_reser {
+      margin-top: 30px;
+    }
     .reser_tit {
-      padding-top: 50px;
+      padding-top: 15px;
+    }
+    .swiper-scrollbar {
+      bottom: 0;
     }
   }
-}
-@media screen and (max-width: 768px) {
-  .event_reser_slide {
-    height: 500px;
-    .reser_tit {
-      padding-top: 50px;
-    }
+  .event_reser {
+    height: 100%;
+    padding-bottom: 40px;
   }
 }
-@media screen and (max-width: 428px) {
-  .event_reser_slide {
-    height: 460px;
-    .reser_tit {
-      padding-top: 30px;
-      h2 {
-        font-size: 2rem;
-      }
-    }
-  }
-}
+
 .sec-feed {
   position: relative;
-  height: 550px;
+  padding: 275px;
   background: #fafbfc;
   margin-top: 120px;
   .feed_lst {
@@ -719,6 +769,17 @@
           &:nth-child(n + 7):nth-child(-n + 8) {
             display: none;
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .sec-maingoods {
+    .goods_lst {
+      .goods_lst_items {
+        .goods_images {
+          width: 48%;
         }
       }
     }

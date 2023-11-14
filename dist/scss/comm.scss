@@ -439,7 +439,7 @@
     }
     .gnb {
       position: relative;
-      margin: 68px 0 10px;
+      margin: 68px 0 13px;
       padding: 0;
       .top_menber {
         position: absolute;
@@ -454,7 +454,7 @@
     }
     .top_menu {
       width: 100%;
-      padding-top: 13px;
+      padding-top: 18px;
       .menu_lst {
         justify-content: space-between;
         .lst_menu {
@@ -524,7 +524,7 @@
       width: 100%;
       align-items: center;
       flex-direction: row-reverse;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     .footer_sns {
       margin-bottom: 0;
@@ -558,7 +558,7 @@
     }
     .gnb {
       position: relative;
-      margin: 65px 0 5px;
+      margin: 65px 0 10px;
       padding: 0;
       .top_menber {
         position: absolute;
@@ -691,7 +691,7 @@
     }
     .gnb {
       position: relative;
-      margin: 65px 0 5px;
+      margin: 65px 0 7px;
       padding: 0;
       .top_menber {
         position: absolute;
@@ -749,6 +749,9 @@
         }
       }
     }
+  }
+  .section-tit {
+    font-size: 30px;
   }
   #footer {
     .fooer_gnb {
