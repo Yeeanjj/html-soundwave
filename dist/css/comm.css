@@ -818,7 +818,7 @@ legend {
   }
   #header .top_menu {
     width: 100%;
-    padding-top: 15px;
+    padding-top: 20px;
   }
   #header .top_menu .menu_lst {
     justify-content: space-between;
@@ -887,9 +887,14 @@ legend {
   #footer .footer_img {
     margin-top: 20px;
     align-items: normal;
+    flex-direction: column;
   }
   #footer .footer_sns {
     justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  #footer .img_wrap {
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 375px) {

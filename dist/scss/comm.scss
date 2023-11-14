@@ -577,7 +577,7 @@
     }
     .top_menu {
       width: 100%;
-      padding-top: 15px;
+      padding-top: 20px;
       .menu_lst {
         justify-content: space-between;
         .lst_menu {
@@ -652,9 +652,14 @@
     .footer_img {
       margin-top: 20px;
       align-items: normal;
+      flex-direction: column;
     }
     .footer_sns {
       justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+    .img_wrap {
+      justify-content: space-between;
     }
   }
 }
