@@ -1746,6 +1746,12 @@ legend {
   }
 }
 @media screen and (max-width: 428px) {
+  .slide-intro {
+    padding-top: 40px;
+  }
+  .splide__arrow {
+    top: 27%;
+  }
   .event_reser_slide {
     height: 460px;
   }
@@ -1865,6 +1871,9 @@ legend {
     height: 100%;
     padding-bottom: 40px;
   }
+  .mainitem_lst {
+    margin-top: 40px;
+  }
   .mainitem_lst .mainitem_tit_mini a {
     width: 75px;
   }
@@ -1898,11 +1907,42 @@ legend {
   .mainitem_images .item_images .item_oderbox_pay .item_cart::before {
     font-size: 26px;
   }
+  .sec-maingoods {
+    margin-bottom: 80px;
+  }
   .sec-maingoods .goods_lst {
-    margin-top: 80px;
+    margin-top: 50px;
+  }
+  .sec-maingoods .goods_lst .goods_lst_items {
+    margin-top: 50px;
   }
   .sec-maingoods .goods_lst .goods_lst_items .goods_images {
     width: 48%;
+    margin-bottom: 140px;
+  }
+  .sec-maingoods .goods_lst .goods_lst_items .goods_images a {
+    height: 170px;
+  }
+  .sec-maingoods .goods_lst .goods_lst_items .goods_images a .goods_images_txt {
+    font-size: 14px;
+  }
+  .sec-maingoods .goods_lst .goods_lst_items .goods_images a .goods_images_txt .goods_images_text {
+    font-size: 12px;
+  }
+  .sec-artist {
+    padding-bottom: 50px;
+  }
+  .artist_tit {
+    margin-top: 50px;
+  }
+  .artist_images {
+    margin-top: 0;
+  }
+  .artist_images .artimg_wrap {
+    margin-top: 50px;
+  }
+  .artist_images .artimg_wrap .lst_star a {
+    height: 150px;
   }
 }
 .ltemlst_menutab {
