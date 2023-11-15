@@ -1,8 +1,7 @@
 // Main Slide
 .slide-intro {
   overflow: hidden;
-  padding-top: 50px;
-  height: 800px;
+  padding: 50px 0 80px;
   .main_slide {
     max-width: 800px;
     margin: 0 auto;
@@ -637,7 +636,6 @@
     .item_oderbox {
       display: block;
       background: none;
-      padding: 20px 15px;
       color: #222;
     }
     .item_oderbox_tit {
@@ -684,7 +682,6 @@
   }
   .artist_images {
     .artimg_wrap {
-      margin-top: 45px;
       .lst_star {
         a {
           width: 100%;
@@ -713,16 +710,12 @@
 }
 @media screen and (max-width: 768px) {
   .event_reser_slide {
-    height: 500px;
     .reser_tit {
       padding-top: 50px;
     }
   }
   .mainitem_lst {
     padding-bottom: 0;
-    .mainitem_tit {
-      font-size: 2.5rem;
-    }
     .mainitem_tit_mini {
       .mini_txt {
         &.active {
@@ -773,31 +766,44 @@
 }
 @media screen and (max-width: 428px) {
   .slide-intro {
-    padding-top: 40px;
+    padding: 40px 0 80px;
+
+    .main_slide {
+      .splide__slide {
+        .slide__txt {
+          margin-top: 40px;
+          strong {
+            font-size: 24px;
+          }
+        }
+      }
+    }
   }
   .splide__arrow {
-    top: 27%;
+    top: 31%;
+  }
+  .splide__pagination {
+    bottom: -20px;
   }
   .event_reser_slide {
-    height: 460px;
+    .slide_reser {
+      margin-top: 50px;
+    }
     .reser_tit {
-      padding-top: 30px;
+      padding-top: 20px;
       h2 {
         font-size: 2rem;
       }
     }
   }
   .mainitem_lst {
-    margin-top: 30px;
-    .mainitem_tit {
-      font-size: 2rem;
-    }
+    margin-top: 60px;
     .mainitem_tit_mini {
       font-size: 20px;
       .mini_txt {
         &.active {
           &::after {
-            top: -2px;
+            top: -12px;
           }
         }
       }
@@ -805,8 +811,10 @@
   }
   .mainitem_images {
     flex-direction: column;
+    margin-top: 50px;
     .item_images {
-      width: 80%;
+      width: 60%;
+      margin-bottom: 200px;
       &:nth-child(4) {
         display: block !important;
       }
@@ -817,14 +825,15 @@
       }
       .item_oderbox {
         width: 100%;
-        top: 263px;
-        padding: 20px 15px;
+        top: 250px;
+        padding: 20px 0;
       }
       .item_oderbox_tit {
         font-size: 0.875rem;
       }
       .item_txt {
         font-size: 1.125rem;
+        height: auto;
       }
       .item_oderbox_pay {
         justify-content: space-between;
@@ -839,6 +848,9 @@
           text-align: right;
           font-size: 1.125rem;
         }
+        .item_paylst {
+          margin-left: 0;
+        }
         .item_cart {
           &::before {
             font-size: 29px;
@@ -852,6 +864,37 @@
   }
   .main_mid_banner a {
     height: 170px;
+  }
+  .sec-maingoods {
+    margin-bottom: 100px;
+    .goods_lst {
+      margin-top: 60px;
+      .goods_lst_items {
+        margin-top: 50px;
+        .goods_images {
+          width: 48%;
+          a {
+            height: 220px;
+          }
+        }
+      }
+    }
+  }
+  .artist_lst {
+    padding-bottom: 60px;
+  }
+  .artist_tit {
+    margin-top: 60px;
+  }
+  .artist_images {
+    .artimg_wrap {
+      .lst_star {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .artist_more {
+    bottom: -8%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -974,20 +1017,6 @@
     }
   }
   .sec-artist {
-    padding-bottom: 50px;
-  }
-  .artist_tit {
-    margin-top: 50px;
-  }
-  .artist_images {
-    margin-top: 0;
-    .artimg_wrap {
-      margin-top: 50px;
-      .lst_star {
-        a {
-          height: 150px;
-        }
-      }
-    }
+    display: none;
   }
 }

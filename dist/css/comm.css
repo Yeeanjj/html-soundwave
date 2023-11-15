@@ -836,6 +836,9 @@ legend {
   #main .togo_btn {
     right: 4%;
   }
+  .section-tit {
+    font-size: 40px;
+  }
   #footer .fooer_gnb {
     padding: 8px 0;
     font-size: 14px;
@@ -1036,8 +1039,7 @@ legend {
 }
 .slide-intro {
   overflow: hidden;
-  padding-top: 50px;
-  height: 800px;
+  padding: 50px 0 80px;
 }
 .slide-intro .main_slide {
   max-width: 800px;
@@ -1650,7 +1652,6 @@ legend {
   .mainitem_images .item_oderbox {
     display: block;
     background: none;
-    padding: 20px 15px;
     color: #222;
   }
   .mainitem_images .item_oderbox_tit {
@@ -1680,9 +1681,6 @@ legend {
   .sec-artist {
     padding-bottom: 100px;
   }
-  .artist_images .artimg_wrap {
-    margin-top: 45px;
-  }
   .artist_images .artimg_wrap .lst_star a {
     width: 100%;
     height: 200px;
@@ -1704,17 +1702,11 @@ legend {
   }
 }
 @media screen and (max-width: 768px) {
-  .event_reser_slide {
-    height: 500px;
-  }
   .event_reser_slide .reser_tit {
     padding-top: 50px;
   }
   .mainitem_lst {
     padding-bottom: 0;
-  }
-  .mainitem_lst .mainitem_tit {
-    font-size: 2.5rem;
   }
   .mainitem_lst .mainitem_tit_mini .mini_txt.active::after {
     top: -3px;
@@ -1747,37 +1739,45 @@ legend {
 }
 @media screen and (max-width: 428px) {
   .slide-intro {
-    padding-top: 40px;
+    padding: 40px 0 80px;
+  }
+  .slide-intro .main_slide .splide__slide .slide__txt {
+    margin-top: 40px;
+  }
+  .slide-intro .main_slide .splide__slide .slide__txt strong {
+    font-size: 24px;
   }
   .splide__arrow {
-    top: 27%;
+    top: 31%;
   }
-  .event_reser_slide {
-    height: 460px;
+  .splide__pagination {
+    bottom: -20px;
+  }
+  .event_reser_slide .slide_reser {
+    margin-top: 50px;
   }
   .event_reser_slide .reser_tit {
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .event_reser_slide .reser_tit h2 {
     font-size: 2rem;
   }
   .mainitem_lst {
-    margin-top: 30px;
-  }
-  .mainitem_lst .mainitem_tit {
-    font-size: 2rem;
+    margin-top: 60px;
   }
   .mainitem_lst .mainitem_tit_mini {
     font-size: 20px;
   }
   .mainitem_lst .mainitem_tit_mini .mini_txt.active::after {
-    top: -2px;
+    top: -12px;
   }
   .mainitem_images {
     flex-direction: column;
+    margin-top: 50px;
   }
   .mainitem_images .item_images {
-    width: 80%;
+    width: 60%;
+    margin-bottom: 200px;
   }
   .mainitem_images .item_images:nth-child(4) {
     display: block !important;
@@ -1789,14 +1789,15 @@ legend {
   }
   .mainitem_images .item_images .item_oderbox {
     width: 100%;
-    top: 263px;
-    padding: 20px 15px;
+    top: 250px;
+    padding: 20px 0;
   }
   .mainitem_images .item_images .item_oderbox_tit {
     font-size: 0.875rem;
   }
   .mainitem_images .item_images .item_txt {
     font-size: 1.125rem;
+    height: auto;
   }
   .mainitem_images .item_images .item_oderbox_pay {
     justify-content: space-between;
@@ -1812,6 +1813,9 @@ legend {
     text-align: right;
     font-size: 1.125rem;
   }
+  .mainitem_images .item_images .item_oderbox_pay .item_paylst {
+    margin-left: 0;
+  }
   .mainitem_images .item_images .item_oderbox_pay .item_cart::before {
     font-size: 29px;
   }
@@ -1820,6 +1824,33 @@ legend {
   }
   .main_mid_banner a {
     height: 170px;
+  }
+  .sec-maingoods {
+    margin-bottom: 100px;
+  }
+  .sec-maingoods .goods_lst {
+    margin-top: 60px;
+  }
+  .sec-maingoods .goods_lst .goods_lst_items {
+    margin-top: 50px;
+  }
+  .sec-maingoods .goods_lst .goods_lst_items .goods_images {
+    width: 48%;
+  }
+  .sec-maingoods .goods_lst .goods_lst_items .goods_images a {
+    height: 220px;
+  }
+  .artist_lst {
+    padding-bottom: 60px;
+  }
+  .artist_tit {
+    margin-top: 60px;
+  }
+  .artist_images .artimg_wrap .lst_star {
+    margin-bottom: 20px;
+  }
+  .artist_more {
+    bottom: -8%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1930,19 +1961,7 @@ legend {
     font-size: 12px;
   }
   .sec-artist {
-    padding-bottom: 50px;
-  }
-  .artist_tit {
-    margin-top: 50px;
-  }
-  .artist_images {
-    margin-top: 0;
-  }
-  .artist_images .artimg_wrap {
-    margin-top: 50px;
-  }
-  .artist_images .artimg_wrap .lst_star a {
-    height: 150px;
+    display: none;
   }
 }
 .ltemlst_menutab {
