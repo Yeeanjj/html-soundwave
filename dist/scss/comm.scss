@@ -15,7 +15,7 @@
   font-size: 50px;
   font-weight: 700;
 }
-// header
+// Header
 #header {
   border-bottom: 1px solid #333;
   .header_bbsbg {
@@ -152,6 +152,8 @@
     }
   }
 }
+
+// Footer
 #footer {
   background: #fefefe;
   color: #222;
@@ -339,6 +341,7 @@
   }
 }
 
+// Main
 #main {
   position: relative;
   .togo_btn {
@@ -397,6 +400,8 @@
     }
   }
 }
+
+// Media Query
 @media screen and (max-width: 1024px) {
   .inner {
     margin: 0 5%;
@@ -474,6 +479,9 @@
   }
   #main .togo_btn {
     right: 4%;
+  }
+  .section-tit {
+    font-size: 48px;
   }
   #footer {
     .fooer_gnb {
