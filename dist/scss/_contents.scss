@@ -1,4 +1,4 @@
-// itemlst
+// Itemlst
 .ltemlst_menutab {
   background: #fafbfc;
   .itemlst_menu {
@@ -68,11 +68,10 @@
     a {
       display: block;
       width: 285px;
-      height: 450px;
       img {
         display: block;
-        width: 285px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
       }
     }
@@ -177,7 +176,32 @@
   }
 }
 
-//goodslist
+// Itemlst - Media Query
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 428px) {
+}
+@media screen and (max-width: 375px) {
+  .itemlst_info {
+    margin-top: 70px;
+  }
+  .infolst {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    .infolst_item {
+      a {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Goodslist
 .item_explantion {
   height: 730px;
   border-bottom: 1px solid #e9e9e9;
@@ -398,7 +422,17 @@
   }
 }
 
-// notion
+// Goodslist - Media Query
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 428px) {
+}
+@media screen and (max-width: 375px) {
+}
+
+// Notion
 .notion-tit {
   font-size: 2.5rem;
   margin: 70px 0;
@@ -444,7 +478,6 @@
     font-size: 1.5rem;
   }
 }
-
 .notionlist_pagenate {
   display: flex;
   justify-content: center;
@@ -475,4 +508,14 @@
     font-family: "Material Symbols Outlined";
     font-size: 1.5rem;
   }
+}
+
+// Notion - Media Query
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 428px) {
+}
+@media screen and (max-width: 375px) {
 }

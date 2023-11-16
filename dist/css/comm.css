@@ -2103,12 +2103,11 @@ legend {
 .infolst .infolst_item a {
   display: block;
   width: 285px;
-  height: 450px;
 }
 .infolst .infolst_item a img {
   display: block;
-  width: 285px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2209,6 +2208,19 @@ legend {
   font-family: "Material Symbols Outlined";
 }
 
+@media screen and (max-width: 375px) {
+  .itemlst_info {
+    margin-top: 70px;
+  }
+  .infolst {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .infolst .infolst_item a img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .item_explantion {
   height: 730px;
   border-bottom: 1px solid #e9e9e9;
