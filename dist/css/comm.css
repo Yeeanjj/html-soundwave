@@ -2621,6 +2621,55 @@ legend {
   border-radius: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .goods_infomaition .goods_infobox {
+    width: 80%;
+  }
+  .goods_infomaition .goods_infobox .itemname_artist {
+    font-size: 18px;
+  }
+  .goods_infomaition .goods_infobox .goods_itemname_tit {
+    font-size: 20px;
+  }
+  .goods_infomaition .goods_infobox .resergoods {
+    font-size: 16px;
+  }
+  .goods_infomaition .infocash_images img {
+    width: 100%;
+  }
+  .goods_infomaition .goods_itemchoice {
+    width: 100%;
+  }
+  .goods_infomaition .goods_itemchoice {
+    width: 100%;
+  }
+  .goods_infomaition .infocash_btnbox {
+    width: 100%;
+  }
+  .goods_infomaition .infocash_btnbox .infocash_buy {
+    height: 50px;
+    font-size: 16px;
+  }
+  .goods_infomaition .infocash_btnbox .btnbox_buy .btnbox {
+    height: 50px;
+    font-size: 16px;
+  }
+  .goods_explantion .goods_return .return_and_back {
+    font-size: 22px;
+  }
+  .goods_explantion .goods_return .return_and_back::before {
+    top: -10px;
+  }
+  .goods_explantion .goods_return .return_and_backinfo {
+    font-size: 22px;
+  }
+  .goods_explantion .goods_return .return_and_backinfo::before {
+    top: -7px;
+  }
+  .goods_explantion .goods_return .goods_return-txt {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 428px) {
   .item_explantion {
     padding: 0 0 70px;

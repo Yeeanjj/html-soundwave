@@ -655,6 +655,61 @@
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 768px) {
+  .goods_infomaition {
+    .goods_infobox {
+      width: 80%;
+      .itemname_artist {
+        font-size: 18px;
+      }
+      .goods_itemname_tit {
+        font-size: 20px;
+      }
+      .resergoods {
+        font-size: 16px;
+      }
+    }
+    .infocash_images img {
+      width: 100%;
+    }
+    .goods_itemchoice {
+      width: 100%;
+    }
+    .goods_itemchoice {
+      width: 100%;
+    }
+    .infocash_btnbox {
+      width: 100%;
+      .infocash_buy {
+        height: 50px;
+        font-size: 16px;
+      }
+      .btnbox_buy {
+        .btnbox {
+          height: 50px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .goods_explantion {
+    .goods_return {
+      .return_and_back {
+        font-size: 22px;
+        &::before {
+          top: -10px;
+        }
+      }
+      .return_and_backinfo {
+        font-size: 22px;
+        &::before {
+          top: -7px;
+        }
+      }
+      .goods_return-txt {
+        font-size: 18px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 428px) {
   .item_explantion {
