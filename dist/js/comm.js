@@ -9,6 +9,10 @@ var swiper = new Swiper(".event_reser", {
     hide: false,
   },
   breakpoints: {
+    376: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
     429: {
       slidesPerView: 3,
       spaceBetween: 10,

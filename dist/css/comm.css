@@ -1822,6 +1822,9 @@ legend {
   .event_reser_slide .slide_reser {
     margin-top: 50px;
   }
+  .event_reser_slide .slide_reser .slide_sub a {
+    height: 220px;
+  }
   .event_reser_slide .reser_tit {
     padding-top: 20px;
   }

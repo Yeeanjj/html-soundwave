@@ -846,6 +846,11 @@
   .event_reser_slide {
     .slide_reser {
       margin-top: 50px;
+      .slide_sub {
+        a {
+          height: 220px;
+        }
+      }
     }
     .reser_tit {
       padding-top: 20px;
